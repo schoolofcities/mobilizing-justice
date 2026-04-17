@@ -8,6 +8,7 @@
 	import AuthorDate from '$lib/AuthorDate.svelte';
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
+	import Password from "$lib/Password.svelte";
 
 	const footnotes = [
 		{ id: 1, text: "Zhao, P., et al. (2018). Placeholder — full citation to be added." },
@@ -21,11 +22,21 @@
 </script>
 
 
+<Password/>
+
+
 <TitleText
 	subtitle="MJ National Survey"
 	title="Income"
 	description="Key findings on income and transport poverty across Canada"
 />
+
+<div class="text">
+	<p>
+		Household income has a substantial impact on daily travel. Lower incomes can limit ability to afford a private car and broadly limit the number of transportation options available because of their costs. This can make it harder to regularly travel to work (or even find employment), education, health care, and other destinations. Findings from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a> show how perceptions of transportation systems and how people travel on a daily basis can vary widely based on household income. Understanding these findings can ...
+	</p>
+
+</div>
 
 
 
@@ -102,6 +113,7 @@
 		]}
 	/>
 
+	
 	<h2>
 		Driving, transit, and active travel
 	</h2>

@@ -223,13 +223,13 @@ em {
 a {
 	color: var(--brandBlack);
 	text-decoration: underline;
-	font-family: SourceSerif;
+	font-family: inherit;
 	font-weight: normal;
 }
 
 
 a:hover {
-	color: var(--brandMedGreen);
+	color: var(--mjGreen);
 }
 
 ul {

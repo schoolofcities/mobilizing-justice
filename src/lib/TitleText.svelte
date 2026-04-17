@@ -18,7 +18,7 @@
 
 <style>
 	.title-block {
-		max-width: 680px;
+		max-width: 720px;
 		margin: auto;
 		padding: 0 20px;
 		border-left: 12px solid var(--mjYellow);
