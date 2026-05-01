@@ -63,4 +63,27 @@
 		padding: 0;
 		opacity: 0.8;
 	}
+
+	@media (max-width: 550px) {
+		.stat-section {
+			padding: 32px 32px 28px;
+			gap: 16px;
+		}
+
+		.context-label {
+			font-size: 25px;
+			margin-top: -8px;
+			padding-bottom: 8px;
+			margin-bottom: 10px;
+		}
+
+		.desc-section {
+			padding: 18px 32px 24px;
+		}
+
+		.desc-text {
+			font-size: 11px;
+			line-height: 17px;
+		}
+	}
 </style>

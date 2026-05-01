@@ -1,8 +1,14 @@
+
+<!-- <Password/> -->
+
+
+
 <script>
 
 	import "../../../assets/global-styles.css";
 	import StatCardComparison from '$lib/StatCardComparison.svelte';
 	import StatCardBars from '$lib/StatCardBars.svelte';
+	import StatCardTwoSquares from "$lib/StatCardTwoSquares.svelte";
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
 	import AuthorDate from '$lib/AuthorDate.svelte';
@@ -22,7 +28,6 @@
 </script>
 
 
-<Password/>
 
 
 <TitleText
@@ -32,8 +37,12 @@
 />
 
 <div class="text">
+
 	<p>
-		Household income has a substantial impact on daily travel. Lower incomes can limit ability to afford a private car and broadly limit the number of transportation options available because of their costs. This can make it harder to regularly travel to work (or even find employment), education, health care, and other destinations. Findings from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a> show how perceptions of transportation systems and how people travel on a daily basis can vary widely based on household income. Understanding these findings can ...
+		Household income has a substantial impact on daily travel. Lower incomes can limit ability to afford a private car and broadly limit the number of transportation options available because of their costs. This can make it harder to regularly travel to work (or even find employment), education, health care, and other destinations. 
+	</p>
+	<p>
+		Findings from the Mobilizing Justice National Survey on Transport Poverty show how perceptions of transportation systems and how people travel on a daily basis can vary widely based on household income. Understanding these findings can help identify where transportation systems are not meeting people’s everyday needs and where affordability-related barriers may be limiting access to opportunities. It can also support more targeted policies and investments, such as improving affordable and reliable transit options, reducing car dependence, and ensuring that people with lower incomes can reach work, education, health care, and essential services with safety and reliability.
 	</p>
 
 </div>
@@ -46,11 +55,11 @@
 		context="Low income households are far less likely to own private vehicles"
 		stat1="31%"
 		color1="var(--mjYellow)"
-		label1="of low income households do not own a private vehicle"
+		label1="of individuals living in low-income households do not own a private vehicle"
 		stat2="3%"
 		color2="var(--mjGreen)"
-		label2="of high income households do not own a private vehicle"
-		description="Low income households are those that make less than $50,000 before tax (n = 200). High income households are those that make more than $200,000 before tax (n = 320)."
+		label2="of individuals living in high-income households do not own a private vehicle"
+		description="Low income households are those that make less than $60,000 before tax (n = 200). High income households are those that make more than $120,000 before tax (n = 320)."
 	/>
 
 	<StatCardBars
@@ -59,59 +68,73 @@
 			{
 				label: "Take public transit to work 5× per week (%)",
 				bars: [
-					{ label: "Individuals in low income households", value: 22 },
-					{ label: "Individuals in high income households", value: 11 }
+					{ label: "Individuals in low-income households", value: 22 },
+					{ label: "Individuals in high-income households", value: 15 }
 				]
 			},
 			{
 				label: "Transit pass ownership (%)",
 				bars: [
-					{ label: "Individuals in low income households", value: 12 },
-					{ label: "Individuals in high income households", value: 5 }
+					{ label: "Individuals in low-income households", value: 15 },
+					{ label: "Individuals in high-income households", value: 4 }
 				]
 			}
 		]}
-		description="Low income households are those that make less than $50,000 before tax (n = 200). High income households are those that make more than $200,000 before tax (n = 320)."
+		description="Low income households are those that make less than $60,000 before tax (n = 200). High income households are those that make more than $120,000 before tax (n = 320)."
+	/>
+
+	<StatCardTwoSquares
+		context="Does transport situation lead to declining employment opportunities?"
+		stat1={35}
+		color1="var(--mjYellow)"
+		label1="of individuals living in low-income households agreed or strongly agreed with this statement"
+		stat2={21}
+		color2="var(--mjGreen)"
+		label2="of individuals living in high-income households agreed or strongly agreed with this statement"
+		description="Low income households are those that make less than $60,000 before tax (n = 200). High income households are those that make more than $120,000 before tax (n = 320)."
 	/>
 
 	<StatCardBars
 		context="Low income households make use of active travel more"
 		groups={[
 			{
-				label: "Walk to work 5× per week (%)",
+				label: "Walk to work at least once per week (%)",
 				bars: [
-					{ label: "Individuals in low income households", value: 30 },
-					{ label: "Individuals in high income households", value: 24 }
+					{ label: "Individuals in low-income households", value: 32 },
+					{ label: "Individuals in high-income households", value: 22 }
 				]
 			}
 		]}
-		description="Low income households are those that make less than $50,000 before tax (n = 200). High income households are those that make more than $200,000 before tax (n = 320)."
+		description="Low income households are those that make less than $60,000 before tax (n = 200). High income households are those that make more than $120,000 before tax (n = 320)."
 	/>
 
 	<StatCardComparison
-		context="Do transport constraints lead to a decline employment opportunities?"
-		stat1="53%"
+		context="Transport affordability is a key reason for the mismatch between preferred and frequent mode for low-income households?"
+		stat1="17%"
 		color1="var(--mjYellow)"
-		label1="of low income households agreed or strongly agreed with this statement"
-		stat2="40%"
+		label1="of individuals living in low-income households identified affordability as a reason for the mismatch"
+		stat2="4%"
 		color2="var(--mjGreen)"
-		label2="of high income households agreed or strongly agreed with this statement"
-		description="Low income households are those that make less than $50,000 before tax (n = 200). High income households are those that make more than $200,000 before tax (n = 320)."
+		label2="of individuals living in high-income households identified affordability as a reason for the mismatch"
+		description="Low income households are those that make less than $60,000 before tax (n = 200). High income households are those that make more than $120,000 before tax (n = 320)."
 	/>
+	
+
+	
 
 </StatCardGrid>
 
 
 <div class="text">
 
-	<AuthorDate
+	<!-- <AuthorDate
 		date="May 2026"
 		credits={[
 			{ role: "Research", names: "Author names" },
 			{ role: "Writing", names: "Author names" },
 			{ role: "Graphics", names: "Author names" }
 		]}
-	/>
+	/> -->
 
 	
 	<h2>

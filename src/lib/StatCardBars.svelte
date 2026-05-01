@@ -62,6 +62,26 @@
 		white-space: nowrap;
 	}
 
+	@media (max-width: 550px) {
+		.bar-chart {
+			grid-template-columns: 1fr;
+			row-gap: 6px;
+		}
+
+		.bar-label {
+			white-space: normal;
+			font-size: 12px;
+		}
+
+		.metric-label {
+			font-size: 15px;
+		}
+
+		.pct {
+			font-size: 14px;
+		}
+	}
+
 	.bar-track {
 		display: flex;
 		align-items: center;

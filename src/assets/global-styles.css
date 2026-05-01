@@ -86,6 +86,7 @@
 	--brandLightBlue: #6FC7EA;
 	--brandPurple: #6D247A;
 	--brandPink: #AB1368;
+	--brandLightPurple: #d8b1ff;
 	--brandDarkGreen: #0D534D;
 	--brandMedGreen: #00A189;
 	--brandLightGreen: #8DBF2E;
@@ -94,7 +95,7 @@
 	--brandOrange: #EBA00F;
 	--brandBlack: #000000;
 	--brandWhite: #ffffff;
-	--brandGray: #D0D1C9;
+	--brandGray: brandPurple#D0D1C9;
 	--brandGray50: #858585;
 	--brandGray60: #727272;
 	--brandGray70: #4d4d4d;

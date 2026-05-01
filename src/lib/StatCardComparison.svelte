@@ -3,24 +3,34 @@
 
 	export let context = '';
 	export let description = '';
+
+	// Array API: [{ stat, label, color }]
+	export let stats = [];
+
+	// Legacy two-item props — used when stats array is not provided
 	export let stat1 = '';
 	export let label1 = '';
 	export let color1 = 'var(--mjYellow)';
 	export let stat2 = '';
 	export let label2 = '';
 	export let color2 = 'var(--mjYellow)';
+
+	$: items = stats.length
+		? stats
+		: [
+				{ stat: stat1, label: label1, color: color1 },
+				{ stat: stat2, label: label2, color: color2 }
+		  ];
 </script>
 
 <StatCardBase {context} {description}>
 	<div class="comparison">
-		<div class="stat-block">
-			<div class="number" style="color: {color1}">{stat1}</div>
-			<div class="sublabel">{label1}</div>
-		</div>
-		<div class="stat-block">
-			<div class="number" style="color: {color2}">{stat2}</div>
-			<div class="sublabel">{label2}</div>
-		</div>
+		{#each items as item}
+			<div class="stat-block">
+				<div class="number" style="color: {item.color}">{item.stat}</div>
+				<div class="sublabel">{item.label}</div>
+			</div>
+		{/each}
 	</div>
 </StatCardBase>
 
@@ -31,6 +41,21 @@
 		justify-content: flex-start;
 		gap: 32px;
 		width: 100%;
+	}
+
+	@media (max-width: 550px) {
+		.comparison {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.number {
+			font-size: 63px;
+		}
+
+		.sublabel {
+			font-size: 15px;
+		}
 	}
 
 	.stat-block {
