@@ -3,6 +3,8 @@
 
 	export let context = '';
 	export let description = '';
+	export let backText = '';
+	export let icon = '';
 
 	// Array API: [{ stat, label, color }]
 	export let stats = [];
@@ -23,7 +25,7 @@
 		  ];
 </script>
 
-<StatCardBase {context} {description}>
+<StatCardBase {context} {description} {backText} {icon}>
 	<div class="comparison">
 		{#each items as item}
 			<div class="stat-block">

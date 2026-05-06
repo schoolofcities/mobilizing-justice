@@ -36,6 +36,7 @@
 		}
 	}
 
+	.grid-container :global(.flip-container),
 	.grid-container :global(.stat-card) {
 		width: 100%;
 		margin-top: 0;

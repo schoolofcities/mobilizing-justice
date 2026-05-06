@@ -3,88 +3,85 @@
 
 	export let context = '';
 	export let description = '';
+	export let backText = '';
+	export let sharedLabel = '';
+	export let icon = '';
 
-	export let stat1 = 75;
+	// stats: [{ stat, label, color }]
+	export let stats = [];
+
+	// Legacy two-item props
+	export let stat1 = null;
 	export let label1 = '';
 	export let color1 = 'var(--mjYellow)';
-
-	export let stat2 = 42;
+	export let stat2 = null;
 	export let label2 = '';
-	export let color2 = 'var(--mjBlue)';
+	export let color2 = 'var(--mjGreen)';
+
+	$: items = stats.length
+		? stats
+		: [
+				{ stat: stat1, label: label1, color: color1 },
+				{ stat: stat2, label: label2, color: color2 }
+		  ];
 </script>
 
-<StatCardBase {context} {description}>
-	<div class="comparison">
-		<div class="stat-block">
-			<div class="top-row">
-				<div class="number" style="color: {color1}">
-					{stat1}%
+<StatCardBase {context} {description} {backText} {icon}>
+	<div class="stack">
+		{#if sharedLabel}
+			<p class="shared-label">{sharedLabel}</p>
+		{/if}
+		<div class="comparison">
+			{#each items as item}
+				<div class="stat-block">
+					<div class="top-row">
+						<div class="number" style="color: {item.color}">
+							{item.stat}%
+						</div>
+						<div class="grid">
+							{#each Array(100) as _, i}
+								<div
+									class="square"
+									class:filled={i < item.stat}
+									style="--fill: {item.color};"
+								/>
+							{/each}
+						</div>
+					</div>
+					<div class="group-label">{item.label}</div>
 				</div>
-
-				<div class="grid">
-					{#each Array(100) as _, i}
-						<div
-							class="square"
-							class:filled={i < stat1}
-							style="--fill: {color1};"
-						/>
-					{/each}
-				</div>
-			</div>
-
-			<div class="sublabel">{label1}</div>
-		</div>
-
-		<div class="stat-block">
-			<div class="top-row">
-				<div class="number" style="color: {color2}">
-					{stat2}%
-				</div>
-
-				<div class="grid">
-					{#each Array(100) as _, i}
-						<div
-							class="square"
-							class:filled={i < stat2}
-							style="--fill: {color2};"
-						/>
-					{/each}
-				</div>
-			</div>
-
-			<div class="sublabel">{label2}</div>
+			{/each}
 		</div>
 	</div>
 </StatCardBase>
 
 <style>
+	.stack {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		width: 100%;
+	}
+
+	.shared-label {
+		font-family: RobotoRegular, sans-serif;
+		font-size: 18px;
+		color: var(--mjWhite);
+		margin: 0;
+		line-height: 1.4;
+	}
+
 	.comparison {
 		display: flex;
 		gap: 28px;
 		width: 100%;
 	}
 
-	@media (max-width: 550px) {
-		.comparison {
-			flex-direction: column;
-			gap: 24px;
-		}
-
-		.number {
-			font-size: 40px;
-			min-width: 74px;
-		}
-
-		.sublabel {
-			font-size: 14px;
-		}
-	}
-
 	.stat-block {
 		flex: 1;
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 10px;
 	}
 
 	.top-row {
@@ -99,7 +96,7 @@
 		line-height: 1;
 		letter-spacing: -1px;
 		white-space: nowrap;
-		min-width: 92px;
+		min-width: 80px;
 	}
 
 	.grid {
@@ -122,11 +119,26 @@
 		box-shadow: 0 0 4px color-mix(in srgb, var(--fill) 40%, transparent);
 	}
 
-	.sublabel {
+	.group-label {
 		font-family: RobotoBold, sans-serif;
-		font-size: 17px;
-		line-height: 1.3;
+		font-size: 15px;
 		color: var(--mjWhite);
-		opacity: 0.92;
+		letter-spacing: 0.03em;
+	}
+
+	@media (max-width: 550px) {
+		.comparison {
+			flex-direction: column;
+			gap: 24px;
+		}
+
+		.number {
+			font-size: 40px;
+			min-width: 68px;
+		}
+
+		.shared-label {
+			font-size: 15px;
+		}
 	}
 </style>

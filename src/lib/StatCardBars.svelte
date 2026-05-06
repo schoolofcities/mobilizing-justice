@@ -5,11 +5,13 @@
 	export let description = '';
 	// groups: [{ label?: string, bars: [{ label: string, value: number, color?: string }] }]
 	export let groups = [];
+	export let backText = '';
+	export let icon = '';
 	// fallback colors applied in bar order when bar.color is not set
 	export let colors = ['var(--mjYellow)', 'var(--mjGreen)', 'var(--mjPurple)', 'var(--mjBlue)'];
 </script>
 
-<StatCardBase {context} {description}>
+<StatCardBase {context} {description} {backText} {icon}>
 	<div class="bar-chart">
 		{#each groups as group, i}
 			{#if i > 0}<div class="row-divider"></div>{/if}
