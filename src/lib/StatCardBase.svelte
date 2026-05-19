@@ -168,6 +168,7 @@
 
 	.stat-section {
 		padding: 48px 48px 40px;
+		min-height: 360px;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -244,6 +245,10 @@
 		.stat-section {
 			padding: 32px 32px 28px;
 			gap: 16px;
+		}
+
+		.icon-badge {
+			margin-top: -32px;
 		}
 
 		.context-label {

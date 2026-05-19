@@ -359,6 +359,15 @@ li {
 }
 
 
+.data-note {
+	font-size: 13px !important;
+	line-height: 20px !important;
+	color: var(--mjGrey) !important;
+	padding-top: 1px !important;
+	margin-top: -30px;
+	margin-bottom: 20px;
+}
+
 .caption-container {
 	margin-top: 2px;
 	margin-bottom: 0px;

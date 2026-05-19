@@ -31,7 +31,7 @@
 		{#if sharedLabel}
 			<p class="shared-label">{sharedLabel}</p>
 		{/if}
-		<div class="comparison">
+		<div class="comparison" class:three-items={items.length >= 3}>
 			{#each items as item}
 				<div class="stat-block">
 					<div class="top-row">
@@ -126,8 +126,31 @@
 		letter-spacing: 0.03em;
 	}
 
+	/* 3-item layout: stack number above grid */
+	.three-items .top-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+	}
+
+	.three-items .number {
+		font-size: 44px;
+		min-width: unset;
+	}
+
+	.three-items .grid {
+		grid-template-columns: repeat(10, 7px);
+		grid-template-rows: repeat(10, 7px);
+		gap: 2px;
+	}
+
+	.three-items .square {
+		width: 7px;
+		height: 7px;
+	}
+
 	@media (max-width: 550px) {
-		.comparison {
+		.comparison:not(.three-items) {
 			flex-direction: column;
 			gap: 24px;
 		}
@@ -135,6 +158,35 @@
 		.number {
 			font-size: 40px;
 			min-width: 68px;
+		}
+
+		.three-items {
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+
+		.three-items .stat-block {
+			flex: 1 1 auto;
+		}
+
+		.three-items .stat-block:last-child {
+			flex: 0 0 100%;
+		}
+
+		.three-items .number {
+			font-size: 36px;
+			min-width: unset;
+		}
+
+		.three-items .grid {
+			grid-template-columns: repeat(10, 6px);
+			grid-template-rows: repeat(10, 6px);
+		}
+
+		.three-items .square {
+			width: 6px;
+			height: 6px;
 		}
 
 		.shared-label {

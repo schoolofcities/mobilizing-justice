@@ -45,6 +45,7 @@
 
 	.numbers-row {
 		display: flex;
+		flex-wrap: wrap;
 		align-items: flex-end;
 		gap: 24px;
 		width: 100%;
@@ -79,6 +80,10 @@
 
 		.shared-label {
 			font-size: 15px;
+		}
+
+		.numbers-row {
+			gap: 16px;
 		}
 	}
 </style>

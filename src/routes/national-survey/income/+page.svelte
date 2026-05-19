@@ -1,5 +1,5 @@
 
-<Password/>
+<!-- <Password/> -->
 
 
 
@@ -68,7 +68,6 @@
 		stat2="3%"
 		color2="var(--mjGreen)"
 		label2="of individuals living in high-income households do not own a private vehicle"
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				31% of low-income individuals do not own a private vehicle, compared to fewer than 3% of high-income individuals. Low-income individuals are also more likely to hold a transit pass, at a rate 7 percentage points higher than high-income individuals. Without access to a car, daily travel depends heavily on transit and active modes. As a result, low-income individuals walk and take public transit to work at considerably higher rates than middle- and high-income groups, and report driving much less.
@@ -95,7 +94,6 @@
 				]
 			}
 		]}
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				22% of low-income individuals take public transit to work five times a week, compared to 15% of high-income individuals, a gap of 11 percentage points. Transit pass ownership follows the same pattern, at 15% among low-income households versus just 4% among high-income households.
@@ -117,7 +115,6 @@
 			{ stat: 35, color: "var(--mjYellow)", label: "of low-income respondents" },
 			{ stat: 21, color: "var(--mjGreen)",  label: "of high-income respondents" }
 		]}
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				35% of low-income individuals agreed or strongly agreed that their transport situation has led them to decline employment opportunities, compared to 21% of high-income individuals.
@@ -150,7 +147,6 @@
 				]
 			}
 		]}
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				32% of low-income individuals walk to work at least once a week, compared to 22% of high-income individuals. The share who walk to work five times per week is nearly 6 percentage points higher among low-income individuals than high-income individuals. A similar pattern holds for cycling: the share who never bike to work is around 7 to 10 percentage points lower among low-income individuals than middle- and high-income groups.
@@ -172,7 +168,6 @@
 			{ stat: "17%", color: "var(--mjYellow)", label: "of low-income residents" },
 			{ stat: "4%",  color: "var(--mjGreen)",  label: "of high-income residents" }
 		]}
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				17% of low-income individuals identified affordability as a reason they do not use their preferred mode of transport, compared to just 4% of high-income individuals. Low-income individuals also reported a stronger sense of being forced to rely on active and public transportation, with score differences of 6 to 10 points compared to other income groups.
@@ -191,7 +186,6 @@
 			{ stat: "20%", color: "var(--mjYellow)", label: "of low-income residents" },
 			{ stat: "30%", color: "var(--mjGreen)",  label: "of High-income residents" }
 		]}
-		description="Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320)."
 		backText="
 			<p>
 				High-income individuals reported longer commute times and more peak-hour congestion than low-income individuals. High-income individuals, with greater access to private vehicles, may commute from further away and have access to a larger job catchment area. Higher car use also increases exposure to traffic congestion compared to those who bike or use rapid transit.
@@ -207,6 +201,9 @@
 
 </StatCardGrid>
 
+<div class="text">
+	<p class="data-note">Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320).</p>
+</div>
 
 <div class="text">
 
