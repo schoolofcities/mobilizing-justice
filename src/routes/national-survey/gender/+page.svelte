@@ -1,5 +1,5 @@
 
-<!-- <Password/> -->
+<Password/>
 
 
 
@@ -110,10 +110,10 @@
 		colors={['var(--brandLightPurple)', 'var(--mjGreen)', 'var(--mjYellow)']}
 		backText="
 			<p>
-				Half of non-binary respondents reported that their transport situation has led them to decline employment opportunities — nearly double the rate of women (26%) and men (29%). The same share, 50%, felt that available transport options enable them to reach healthcare, compared to around 72–73% of women and men. Across both dimensions, the gap is roughly 22–24 percentage points.
+				Half of non-binary respondents reported that their transport situation has led them to decline employment opportunities, nearly double the rate of women (26%) and men (29%). The same share, 50%, felt that available transport options enable them to reach healthcare, compared to around 72–73% of women and men. Across both dimensions, the gap is roughly 22–24 percentage points.
 			</p>
 			<p>
-				A key part of the context here is modal mismatch. Nearly 25% of non-binary individuals reported travelling by a mode they would not choose if alternatives were available — a noticeably higher rate than among women and men. When people are forced into transport arrangements that don't meet their needs, the downstream effects on employment access, healthcare access, and quality of life are real and compounding.
+				A key part of the context here is modal mismatch. Nearly 25% of non-binary individuals reported travelling by a mode they would not choose if alternatives were available, a noticeably higher rate than among women and men. When people are forced into transport arrangements that do not meet their needs, the downstream effects on employment access, healthcare access, and quality of life are real and compounding.
 			</p>
 		"
 	/>
@@ -137,10 +137,10 @@
 				This flows through to commuting behaviour: non-binary individuals drive to work at least once a week at rates nearly 22 percentage points lower than women and 26 percentage points lower than men, while taking transit to work at rates 12–15 percentage points higher. Cycling to work at least once a week was also more common among non-binary individuals (over one-quarter) than among men (about one-fifth) or women (just over one-tenth).
 			</p>
 			<p>
-				Non-binary individuals also reported a notably higher rate of mismatch between their most frequent and preferred travel modes — nearly 25% — suggesting that for many, this reliance on transit and active modes reflects constraint rather than choice.
+				Non-binary individuals also reported a notably higher rate of mismatch between their most frequent and preferred travel modes (nearly 25%), suggesting that for many, this reliance on transit and active modes reflects constraint rather than choice.
 			</p>
 			<p>
-				One striking pattern in school travel: non-binary individuals use paratransit to get to school at least once a week at rates approximately 50 percentage points higher than both women and men — one of the largest gaps observed across all groups and modes in the survey.
+				One striking pattern in school travel: non-binary individuals use paratransit to get to school at least once a week at rates approximately 50 percentage points higher than both women and men, one of the largest gaps observed across all groups and modes in the survey.
 			</p>
 		"
 	/>
@@ -169,10 +169,10 @@
 		colors={['var(--brandLightPurple)', 'var(--mjGreen)', 'var(--mjYellow)']}
 		backText="
 			<p>
-				Non-binary individuals are the least likely to trust transit — only 42% view it as reliable, compared to 57% of women and 64% of men. This 22-point gap with men is particularly striking given that non-binary individuals rely on transit at much higher rates. When the mode you depend on most is also the one you trust least, the consequences for daily mobility are significant.
+				Non-binary individuals are the least likely to trust transit. Only 42% view it as reliable, compared to 57% of women and 64% of men. This 22-point gap with men is particularly striking given that non-binary individuals rely on transit at much higher rates. When the mode you depend on most is also the one you trust least, the consequences for daily mobility are significant.
 			</p>
 			<p>
-				The affordability picture compounds this. More than half of non-binary respondents (52%) reported spending significantly more on transportation than they can afford, compared to 39% of women and 32% of men. Women also experience greater affordability strain than men, pointing to a consistent pattern where transport costs weigh most heavily on those with the least financial flexibility. Together, these findings suggest that non-binary individuals face a double burden: a transit system they cannot fully rely on, and transport costs they can least afford.
+				The affordability picture compounds this. More than half of non-binary respondents (52%) reported spending significantly more on transportation than they can afford, compared to 39% of women and 32% of men. Women also experience greater affordability strain than men, pointing to a consistent pattern where transport costs weigh most heavily on those with the least financial flexibility. Together, these findings suggest that non-binary individuals face compounding pressures: a transit system they rely on heavily but trust least, and transport costs that strain their budgets more than any other group.
 			</p>
 		"
 	/>

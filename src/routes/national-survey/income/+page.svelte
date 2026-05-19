@@ -1,5 +1,5 @@
 
-<!-- <Password/> -->
+<Password/>
 
 
 
@@ -50,7 +50,7 @@
 		In Canada, household income shapes nearly every aspect of how people get around. What modes people can afford, how far they can realistically travel, and whether transportation opens up opportunities or closes them off all vary significantly by income.
 	</p>
 	<p>
-		These findings come from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>. Across Canada, lower-income households face compounding disadvantages: less access to cars, affordability impacting travel choices, and  transportation barriers reducing employment opportunities.
+		These findings come from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>. Across Canada, lower-income households face compounding disadvantages: less access to cars, affordability impacting travel choices, and transportation barriers reducing employment opportunities.
 	</p>
 
 </div>
@@ -102,7 +102,7 @@
 				Interestingly, fewer low-income individuals reported never using a taxi or ride-hailing service for work trips, nearly 6 percentage points below the other income groups. This likely reflects the occasional unreliability of transit and the impracticality of walking or cycling in adverse weather, making ride-hailing a fallback option when other modes fall short, but only for residents who can afford it.
 			</p>
 			<p>
-				Low-income individuals also generally showed more positive perceptions of public transit compared to high-income individuals, who showed a greater inclination towards driving. The differences in results is modest, but the direction is consistent.
+				Low-income individuals also generally showed more positive perceptions of public transit compared to high-income individuals, who showed a greater inclination towards driving. The differences are modest, but the direction is consistent.
 			</p>
 		"
 	/>
@@ -155,7 +155,7 @@
 				For low-income individuals, this is more likely to reflect necessity than preference. High-income individuals who walk tend to compare it against driving, with its fuel and parking costs, making walking feel affordable and enjoyable. Low-income individuals are more likely to compare walking against subsidized transit, which makes that affordability advantage much less obvious.
 			</p>
 			<p>
-				This may help explain why high-income individuals rated walking as safer, more enjoyable, and more affordable than low-income individuals did. High-income individuals tend to walk by choice in safer neighbourhoods; low-income individuals are more likely to walk out of compulsion, which shapes how they perceive the experience.
+				This may help explain why high-income individuals rated walking as safer, more enjoyable, and more affordable than low-income individuals did. High-income individuals tend to walk by choice in safer neighbourhoods, which shapes more positive perceptions. Low-income individuals are more likely to walk out of necessity, and this context changes how the experience feels.
 			</p>
 		"
 	/>
@@ -180,11 +180,11 @@
 
 	<StatCardStack
 		icon={iconClock}
-		context="Longer commutes and experiencing congestion is more common among high-income residents"
+		context="Longer commutes and congestion are more common among high-income residents"
 		sharedLabel="Percent of respondents that agreed or strongly agreed that it takes too long to travel to work [PLACEHOLDER DATA]"
 		stats={[
 			{ stat: "20%", color: "var(--mjYellow)", label: "of low-income residents" },
-			{ stat: "30%", color: "var(--mjGreen)",  label: "of High-income residents" }
+			{ stat: "30%", color: "var(--mjGreen)",  label: "of high-income residents" }
 		]}
 		backText="
 			<p>
