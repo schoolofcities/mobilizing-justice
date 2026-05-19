@@ -6,25 +6,17 @@
 <script>
 
 	import "../../../assets/global-styles.css";
-	import StatCardComparison from '$lib/StatCardComparison.svelte';
 	import StatCardTable from '$lib/StatCardTable.svelte';
-	import StatCardStack from '$lib/StatCardStack.svelte';
 	import StatCardBars from '$lib/StatCardBars.svelte';
 	import StatCardTwoSquares from '$lib/StatCardTwoSquares.svelte';
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import AuthorDate from '$lib/AuthorDate.svelte';
-	import Footnote from '$lib/Footnote.svelte';
-	import Footnotes from '$lib/Footnotes.svelte';
 	import Password from "$lib/Password.svelte";
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
 	import iconBuilding from '../../../assets/svg-icons/domain.svg?url';
-	import iconWalk from '../../../assets/svg-icons/directions_walk.svg?url';
 	import iconBike from '../../../assets/svg-icons/pedal_bike.svg?url';
-	import iconMoney from '../../../assets/svg-icons/attach_money.svg?url';
-	import iconClock from '../../../assets/svg-icons/schedule.svg?url';
 
 	const footnotes = [
 		{ id: 1, text: "Zhao, P., et al. (2018). Placeholder — full citation to be added." },

@@ -10,14 +10,13 @@
 
 <style>
 	.grid-container {
-		column-count: 1;
+		column-count: 2;
 		column-gap: 40px;
 		width: 100%;
 		max-width: 1400px;
 		margin: 40px auto;
 		padding: 0 40px;
 		box-sizing: border-box;
-		column-count: 2;
 		border-top: solid 1px var(--mjPaleGrey);
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -33,6 +32,14 @@
 	@media (max-width: 1000px) {
 		.grid-container {
 			column-count: 1;
+		}
+	}
+
+	@media (max-width: 550px) {
+		.grid-container {
+			padding: 0 5px;
+			border-top: none;
+			border-bottom: none;
 		}
 	}
 

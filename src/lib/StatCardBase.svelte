@@ -59,6 +59,7 @@
 		margin-top: 32px;
 		margin-bottom: 32px;
 		perspective: 1200px;
+		touch-action: pan-y;
 	}
 
 	.flipper {
@@ -249,6 +250,14 @@
 
 		.icon-badge {
 			margin-top: -32px;
+		}
+
+		.back-icon-badge {
+			margin-top: -32px;
+		}
+
+		.back-title {
+			margin-top: 15px;
 		}
 
 		.context-label {

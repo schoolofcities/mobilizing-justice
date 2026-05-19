@@ -9,6 +9,20 @@
 
 	// stats: [{ stat, label, color }]
 	export let stats = [];
+
+	// Legacy two-item props from StatCardComparison
+	export let stat1 = null;
+	export let label1 = '';
+	export let color1 = 'var(--mjYellow)';
+	export let stat2 = null;
+	export let label2 = '';
+	export let color2 = 'var(--mjGreen)';
+
+	$: items = stats.length
+		? stats
+		: stat1 !== null
+			? [{ stat: stat1, label: label1, color: color1 }, { stat: stat2, label: label2, color: color2 }]
+			: [];
 </script>
 
 <StatCardBase {context} {description} {backText} {icon}>
@@ -17,7 +31,7 @@
 			<p class="shared-label">{sharedLabel}</p>
 		{/if}
 		<div class="numbers-row">
-			{#each stats as item}
+			{#each items as item}
 				<div class="stat-block">
 					<div class="number" style="color: {item.color}">{item.stat}</div>
 					<div class="group-label">{item.label}</div>

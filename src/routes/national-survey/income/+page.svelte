@@ -6,15 +6,11 @@
 <script>
 
 	import "../../../assets/global-styles.css";
-	import StatCardComparison from '$lib/StatCardComparison.svelte';
 	import StatCardStack from '$lib/StatCardStack.svelte';
 	import StatCardBars from '$lib/StatCardBars.svelte';
 	import StatCardTwoSquares from "$lib/StatCardTwoSquares.svelte";
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import AuthorDate from '$lib/AuthorDate.svelte';
-	import Footnote from '$lib/Footnote.svelte';
-	import Footnotes from '$lib/Footnotes.svelte';
 	import Password from "$lib/Password.svelte";
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
@@ -59,7 +55,7 @@
 
 <StatCardGrid maxCols={2}>
 
-	<StatCardComparison
+	<StatCardStack
 		icon={iconCar}
 		context="Low-income households are far less likely to own private vehicles"
 		stat1="31%"
