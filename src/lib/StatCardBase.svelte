@@ -5,9 +5,12 @@
 	export let icon = '';
 
 	let flipped = false;
+	let backContent;
 
 	function flip() {
-		if (backText) flipped = !flipped;
+		if (!backText) return;
+		flipped = !flipped;
+		if (flipped && backContent) backContent.scrollTop = 0;
 	}
 </script>
 
@@ -40,7 +43,7 @@
 		<!-- Back -->
 		{#if backText}
 			<div class="stat-card face back">
-				<div class="back-content back-text">
+				<div class="back-content back-text" bind:this={backContent}>
 					{#if icon}<div class="back-icon-badge"></div>{/if}
 					{#if context}<div class="back-title">{context}</div>{/if}
 					{@html backText}

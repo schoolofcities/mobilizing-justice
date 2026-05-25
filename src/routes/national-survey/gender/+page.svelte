@@ -67,13 +67,13 @@
 		]}
 		backText="
 			<p>
-				Women are significantly less likely to cycle than men or non-binary individuals. 85% of women never bike to work, compared to 70% of men and 66% of non-binary individuals. The gap is even wider for travel to school: 92% of women never bike to school, versus 63% of men and 64% of non-binary individuals.
+				Women are significantly less likely to cycle than men or non-binary individuals. 85% of women never bike to work, compared to 70% of men and 66% of non-binary individuals. Cycling to work at least once a week was also more common among non-binary individuals (over one-quarter) than among men (about one-fifth) or women (just over one-tenth).
 			</p>
 			<p>
-				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns and social norms appear to play a significant role, consistent with existing research on gendered experiences of cycling.
+				The gap is even wider for travel to school: 92% of women never bike to school, versus 63% of men and 64% of non-binary individuals. Men walk or bike to school at least once a week about 9 percentage points more than women and use bike-and-ride combinations 19 percentage points more. Non-binary individuals bike to school at considerably higher rates than both groups, nearly 29 percentage points more than women and 20 percentage points more than men. Overall, the findings suggest that women are likely to experience unique barriers to biking compared to men and non-binary individuals.
 			</p>
 			<p>
-				For school travel, gender differences are more pronounced than for commuting. Men walk or bike to school at least once a week about 9 percentage points more than women, use transit nearly 22 percentage points more, and use bike-and-ride combinations 19 percentage points more. Men also use taxis and ride-hailing to school at a rate 12 percentage points higher than women. Non-binary individuals bike to school at considerably higher rates than both groups, nearly 29 percentage points more than women and 20 percentage points more than men. Overall, women and men show broadly similar travel behaviour for commuting, but diverge more noticeably when it comes to getting to school.
+				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns, social norms and caregiving responsibilities appear to play a significant role, consistent with existing research on gendered experiences of cycling.
 			</p>
 		"
 	/>
@@ -126,7 +126,7 @@
 				Non-binary individuals reported private vehicle access nearly 19 percentage points lower than both men and women. They also hold transit passes at a rate about 13–15 percentage points higher (33%, compared to 18% of women and 20% of men), reflecting a much greater reliance on public transit for daily travel.
 			</p>
 			<p>
-				This flows through to commuting behaviour: non-binary individuals drive to work at least once a week at rates nearly 22 percentage points lower than women and 26 percentage points lower than men, while taking transit to work at rates 12–15 percentage points higher. Cycling to work at least once a week was also more common among non-binary individuals (over one-quarter) than among men (about one-fifth) or women (just over one-tenth).
+				This flows through to commuting behaviour: non-binary individuals drive to work at least once a week at rates nearly 22 percentage points lower than women and 26 percentage points lower than men, while taking transit to work at rates 12–15 percentage points higher.
 			</p>
 			<p>
 				Non-binary individuals also reported a notably higher rate of mismatch between their most frequent and preferred travel modes (nearly 25%), suggesting that for many, this reliance on transit and active modes reflects constraint rather than choice.

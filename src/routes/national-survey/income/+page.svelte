@@ -95,7 +95,7 @@
 				22% of low-income individuals take public transit to work five times a week, compared to 15% of high-income individuals, a gap of 11 percentage points. Transit pass ownership follows the same pattern, at 15% among low-income households versus just 4% among high-income households.
 			</p>
 			<p>
-				Interestingly, fewer low-income individuals reported never using a taxi or ride-hailing service for work trips, nearly 6 percentage points below the other income groups. This likely reflects the occasional unreliability of transit and the impracticality of walking or cycling in adverse weather, making ride-hailing a fallback option when other modes fall short, but only for residents who can afford it.
+				These patterns highlight the greater dependence of low-income individuals on public transit for everyday mobility, suggesting the importance of affordable, reliable, and accessible public transit.
 			</p>
 			<p>
 				Low-income individuals also generally showed more positive perceptions of public transit compared to high-income individuals, who showed a greater inclination towards driving. The differences are modest, but the direction is consistent.
@@ -119,7 +119,7 @@
 				Similar patterns were found for education. Low-income respondents were more likely to report not pursuing education due to transport barriers. Reduced educational participation may limit access to better employment over time, suggesting transport disadvantage can compound across generations.
 			</p>
 			<p>
-				It is also worth noting that this figure may underestimate the true impact. Low-income individuals who have grown accustomed to recurring transport constraints may no longer consciously register them as barriers, which could suppress self-reported agreement even when the underlying conditions are more limiting.
+				It is also worth noting that this figure may underestimate the true impact. Low-income individuals who have grown accustomed to recurring transport constraints may no longer consciously register them as barriers, even though these challenges may still limit where they can go and what opportunities they can access.
 			</p>
 		"
 	/>
