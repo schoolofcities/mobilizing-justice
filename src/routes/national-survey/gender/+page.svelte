@@ -12,6 +12,8 @@
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
 	import Password from "$lib/Password.svelte";
+	import Footnote from '$lib/Footnote.svelte';
+	import Footnotes from '$lib/Footnotes.svelte';
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
@@ -73,7 +75,7 @@
 				The gap is even wider for travel to school: 92% of women never bike to school, versus 63% of men and 64% of non-binary individuals. Men walk or bike to school at least once a week about 9 percentage points more than women and use bike-and-ride combinations 19 percentage points more. Non-binary individuals bike to school at considerably higher rates than both groups, nearly 29 percentage points more than women and 20 percentage points more than men. Overall, the findings suggest that women are likely to experience unique barriers to biking compared to men and non-binary individuals.
 			</p>
 			<p>
-				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns, social norms and caregiving responsibilities appear to play a significant role, consistent with existing research on gendered experiences of cycling.
+				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns, social norms and caregiving responsibilities appear to play a significant role, consistent with existing research on gendered experiences of cycling.<sup><a href='#footnote-1' style='color:var(--mjYellow);text-decoration:none;'>[1]</a></sup>
 			</p>
 		"
 	/>
@@ -206,4 +208,25 @@
 
 </div> -->
 
-<!-- <Footnotes {footnotes} /> -->
+<Footnotes {footnotes} />
+
+<div class="text">
+	
+	<p class="data-note">
+	<span class="section-subheading">Credits</span><br><br>
+		Research and writing: Paromita Nakshi, who else?<br>
+		Web development and data visualization: Jeff Allen
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+
+</div>
+
+
+<style>
+	:global(.back-text sup a:hover) {
+		color: var(--mjGreen) !important;
+	}
+</style>

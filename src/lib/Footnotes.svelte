@@ -9,44 +9,26 @@
 
 	{#each footnotes as footnote (footnote.id)}
 		<div id={`footnote-${footnote.id}`} class="footnote-item">
-			<sup>
-				<a
-					href={`#footnote-ref-${footnote.id}`}
-					class="backlink"
-					on:click|preventDefault={() => {
-						const element = document.getElementById(`footnote-ref-${footnote.id}`);
-						if (element) {
-							const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-							window.scrollTo({ top: y, behavior: 'auto' });
-						}
-					}}
-				>[{footnote.id}]</a>
-			</sup>
+			<sup>[{footnote.id}]</sup>
 			<p style="display:inline">{@html footnote.text}</p>
-			<a
-				href={`#footnote-ref-${footnote.id}`}
-				class="backlink"
-				on:click|preventDefault={() => {
-					const element = document.getElementById(`footnote-ref-${footnote.id}`);
-					if (element) {
-						const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
-						window.scrollTo({ top: y, behavior: 'auto' });
-					}
-				}}
-			>⮝</a>
 		</div>
 	{/each}
 </div>
 
 <style>
 	.footnotes {
-		max-width: 680px;
+		max-width: 780px;
 		margin: 0 auto;
 		padding: 20px 20px 32px;
 		margin-top: 40px;
 		margin-bottom: 50px;
 		border-top: solid 1px var(--mjPaleGrey);
 		border-bottom: solid 1px var(--mjPaleGrey);
+	}
+
+	.footnotes :global(h2) {
+		font-size: 18px;
+		margin-top: 0;
 	}
 
 	.footnote-item {
@@ -65,9 +47,9 @@
 
 	.footnote-item p {
 		font-family: RobotoRegular, sans-serif;
-		font-size: 15px;
-		line-height: 22px;
-		color: var(--mjBlack);
+		font-size: 14px;
+		line-height: 21px;
+		color: #555555;
 		font-weight: normal;
 		margin-left: -5px;
 	}
