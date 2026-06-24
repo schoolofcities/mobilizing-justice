@@ -3,6 +3,7 @@
 	export let footnoteListTitle = "References";
 </script>
 
+{#if footnotes.length > 0}
 <div class="footnotes">
 	<h2>{footnoteListTitle}</h2>
 	<br>
@@ -14,6 +15,7 @@
 		</div>
 	{/each}
 </div>
+{/if}
 
 <style>
 	.footnotes {

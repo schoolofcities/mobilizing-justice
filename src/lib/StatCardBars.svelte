@@ -53,7 +53,7 @@
 		font-family: RobotoBold, sans-serif;
 		font-size: 18px;
 		color: var(--mjWhite);
-		padding-bottom: 4px;
+		padding-bottom: 12px;
 	}
 
 	.bar-label {
