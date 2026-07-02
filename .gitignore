@@ -4,6 +4,7 @@ node_modules
 .DS_Store
 .vscode
 .svelte-kit
+.claude
 .env
 .env.*
 !.env.example

@@ -1,4 +1,21 @@
 
+<svelte:head>
+	<meta name="description" content="Key findings on immigration status and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="author" content="Jeff Allen"/>
+	<meta property="og:title" content="Immigration Status & Transport Poverty | Mobilizing Justice"/>
+	<meta property="og:description" content="Key findings on immigration status and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/immigration"/>
+	<meta property="og:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<meta property="og:locale" content="en_CA"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/immigration"/>
+	<meta name="twitter:title" content="Immigration Status & Transport Poverty | Mobilizing Justice"/>
+	<meta name="twitter:description" content="Key findings on immigration status and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="twitter:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<title>Immigration Status | Mobilizing Justice National Survey</title>
+</svelte:head>
+
 <Password/>
 
 
@@ -14,6 +31,7 @@
 	import Password from "$lib/Password.svelte";
 	import Footnote from '$lib/Footnote.svelte';
 	import Footnotes from '$lib/Footnotes.svelte';
+	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
 	import iconBike from '../../../assets/svg-icons/pedal_bike.svg?url';
@@ -131,16 +149,5 @@
 
 <Footnotes {footnotes} />
 
-<div class="text">
 
-	<p class="data-note">
-	<span class="section-subheading">Credits</span><br><br>
-		Research and writing: [TBD]<br>
-		Web development and data visualization: Jeff Allen
-	</p>
-	<br>
-	<br>
-	<br>
-	<br>
-
-</div>
+<PageFooter/>

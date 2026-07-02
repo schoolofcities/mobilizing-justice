@@ -1,4 +1,21 @@
 
+<svelte:head>
+	<meta name="description" content="Key findings on disabilities and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="author" content="Jeff Allen"/>
+	<meta property="og:title" content="Difficulties & Disabilities | Mobilizing Justice"/>
+	<meta property="og:description" content="Key findings on disabilities and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/disabilities"/>
+	<meta property="og:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<meta property="og:locale" content="en_CA"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/disabilities"/>
+	<meta name="twitter:title" content="Difficulties & Disabilities | Mobilizing Justice"/>
+	<meta name="twitter:description" content="Key findings on disabilities and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="twitter:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<title>Difficulties & Disabilities | Mobilizing Justice National Survey</title>
+</svelte:head>
+
 <Password/>
 
 
@@ -12,6 +29,7 @@
 	import TitleText from '$lib/TitleText.svelte';
 	import Password from "$lib/Password.svelte";
 	import Footnotes from '$lib/Footnotes.svelte';
+	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconWalk from '../../../assets/svg-icons/directions_walk.svg?url';
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
@@ -93,16 +111,5 @@
 
 <Footnotes {footnotes} />
 
-<div class="text">
 
-	<p class="data-note">
-	<span class="section-subheading">Credits</span><br><br>
-		Research and writing: [TBD]<br>
-		Web development and data visualization: Jeff Allen
-	</p>
-	<br>
-	<br>
-	<br>
-	<br>
-
-</div>
+<PageFooter/>

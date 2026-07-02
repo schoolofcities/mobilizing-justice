@@ -1,4 +1,21 @@
 
+<svelte:head>
+	<meta name="description" content="Key findings on income and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="author" content="Jeff Allen"/>
+	<meta property="og:title" content="Income & Transport Poverty | Mobilizing Justice"/>
+	<meta property="og:description" content="Key findings on income and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/income"/>
+	<meta property="og:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<meta property="og:locale" content="en_CA"/>
+	<meta name="twitter:card" content="summary_large_image"/>
+	<meta name="twitter:site" content="https://schoolofcities.github.io/mobilizing-justice/national-survey/income"/>
+	<meta name="twitter:title" content="Income & Transport Poverty | Mobilizing Justice"/>
+	<meta name="twitter:description" content="Key findings on income and transport poverty across Canada from the Mobilizing Justice National Survey"/>
+	<meta name="twitter:image" content="https://schoolofcities.github.io/mobilizing-justice/web-card.png"/>
+	<title>Income | Mobilizing Justice National Survey</title>
+</svelte:head>
+
 <Password/>
 
 
@@ -12,6 +29,7 @@
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
 	import Password from "$lib/Password.svelte";
+	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
@@ -250,3 +268,5 @@
 </div>
 
 <!-- <Footnotes {footnotes} /> -->
+
+<PageFooter/>
