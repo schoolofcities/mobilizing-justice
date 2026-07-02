@@ -1,0 +1,1 @@
+import{c as t,a as i}from"./hbdmmYtk.js";import{g as c,E as p,i as m}from"./D4NtfkOk.js";import{B as f}from"./X0hYR_TE.js";function l(n,r,...a){var o=new f(n);c(()=>{const e=r()??null;o.ensure(e,e&&(s=>e(s,...a)))},p)}function E(n,r){var a=t(),o=m(a);l(o,()=>r.children),i(n,a)}export{E as L};
