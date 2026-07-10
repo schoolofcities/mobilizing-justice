@@ -28,24 +28,13 @@
 	import StatCardTwoSquares from '$lib/StatCardTwoSquares.svelte';
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import Password from "$lib/Password.svelte";
-	import Footnote from '$lib/Footnote.svelte';
-	import Footnotes from '$lib/Footnotes.svelte';
+	import Password from '$lib/Password.svelte';
 	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
 	import iconBuilding from '../../../assets/svg-icons/domain.svg?url';
 	import iconBike from '../../../assets/svg-icons/pedal_bike.svg?url';
-
-	const footnotes = [
-		{ id: 1, text: "Zhao, P., et al. (2018). Placeholder — full citation to be added." },
-		{ id: 2, text: "Ghimire, S., & Bardaka, E. (2024). Placeholder — full citation to be added." },
-		{ id: 3, text: "Nakshi, M., et al. (2025). Placeholder — full citation to be added." },
-		{ id: 4, text: "Lucas, K. (2012). Placeholder — full citation to be added." },
-		{ id: 5, text: "Ralph, K. (2018). Placeholder — full citation to be added." },
-		{ id: 6, text: "Connaughton, J., et al. (2026). Placeholder — full citation to be added." },
-	];
 
 </script>
 
@@ -71,7 +60,7 @@
 
 
 
-<StatCardGrid maxCols={2}>
+<StatCardGrid>
 
 	<StatCardTable
 		icon={iconBike}
@@ -93,8 +82,7 @@
 				The gap is even wider for travel to school: 92% of women never bike to school, versus 63% of men and 64% of non-binary individuals. Men walk or bike to school at least once a week about 9 percentage points more than women and use bike-and-ride combinations 19 percentage points more. Non-binary individuals bike to school at considerably higher rates than both groups, nearly 29 percentage points more than women and 20 percentage points more than men. Overall, the findings suggest that women are likely to experience unique barriers to biking compared to men and non-binary individuals.
 			</p>
 			<p>
-				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns, social norms and caregiving responsibilities appear to play a significant role, consistent with existing research on gendered experiences of cycling.<sup><a href='#footnote-1' style='color:var(--mjYellow);text-decoration:none;'>[1]</a></sup>
-			</p>
+				Notably, women reported never biking to work even when they own at least one bike and have previously used bikeshare at a rate 15 percentage points higher than men and 19 percentage points higher than non-binary individuals. This suggests the barrier is not simply one of access. Perceived safety concerns, social norms and caregiving responsibilities appear to play a significant role, consistent with existing research on gendered experiences of cycling.			</p>
 		"
 	/>
 
@@ -103,7 +91,7 @@
 		context="Transport barriers limit access to employment and healthcare, especially for non-binary individuals"
 		groups={[
 			{
-				label: "Declined employment opportunities due to transport situation (%)",
+				label: "Agreed or strongly agreed that they have declined employment opportunities due to their transport situation (%)",
 				bars: [
 					{ label: "Women", value: 26 },
 					{ label: "Men", value: 29 },
@@ -135,7 +123,7 @@
 	<StatCardTwoSquares
 		icon={iconCar}
 		context="Non-binary individuals rely more on transit and less on private vehicles"
-		sharedLabel="Percent of respondents with access to a private vehicle"
+		sharedLabel="Respondents with access to a private vehicle (%)"
 		stats={[
 			{ stat: 85, color: "var(--brandLightPurple)", label: "Women" },
 			{ stat: 86, color: "var(--mjGreen)",          label: "Men" },
@@ -199,34 +187,7 @@
 </div>
 
 
-<!-- <div class="text">
 
-	<p>
-		Non-binary individuals reported nearly 19 percentage points lower private vehicle ownership than both men and women. In contrast, they reported higher transit pass ownership- about 13 percentage points higher than men and 15 percentage points higher than women. They also experienced a mismatch between their frequent and preferred travel modes at a noticeably higher rate (nearly 25%).
-	</p>
-	<p>
-		Similar patterns were observed in commuting behaviour. The share of individuals who drive to work at least once a week is nearly 22 percentage points lower than among women and nearly 26 percentage points lower than among men, while the share who take transit to work at least once a week is nearly 15 percentage points higher than among women and over 12 percentage points higher than among men. Cycling to work at least once a week was more common among individuals in the 'Non-binary' category (over one-fourth) and men (about one-fifth) than among women (just over one-tenth). Along that line, women also reported never biking to work even when they have at least one bike and used bikeshare previously at a noticeably higher rate- 15 percentage points higher than men and 19 percentage points higher than those in 'Non-binary' gender category. This finding is consistent with previous studies on gendered experiences of cycling (Ravensbergen, 2022).
-	</p>
-	<p>
-		The share of individuals who have taken paratransit to work at least once a week is nearly 15 percentage points lower among 'Non-binary' gender category than both men and women. The share of individuals who never drive to work was higher among those in the 'Non-binary' gender category- about 16 percentage points higher than women and 20 percentage points higher than men.
-	</p>
-	<p>
-		Overall, the findings indicate that non-binary individuals rely more on active and public transportation and less on driving for commuting purposes. Women and men, by comparison, exhibit broadly similar travel behaviour patterns, except for significantly lower cycling rates among women.
-	</p>
-	<p>
-		Unlike commuting patterns, gender differences among men and women are more pronounced for travel to school, with men walking or biking at least a week about 9 percentage points more than women. Men also reported travelling to school as a car passenger at least once a week about 14 percentage points more than women, and using transit nearly 22 percentage points more. Similarly, the share of men using a combination of bike and ride to school at least once a week was 19 percentage points higher than women. Men also used taxi or ride hailing at a rate 12 percentage points higher than women.
-	</p>
-	<p>
-		Non-binary individuals bike to school at considerably higher rates than both men and women- nearly 29 percentage points higher than women and 20 percentage points higher than men. They report driving to school about 7 percentage points more than women but travelling as a car passenger 8 percentage points less than women and nearly 23 percentage points less than men. They also use public transit more regularly than women (9 percentage points higher) but less regularly than men (12 percentage points lower). Non-binary individuals report using paratransit to travel to school at least once a week at rates about 50 percentage points higher than women and 49 percentage points higher than men, representing one of the largest differences across groups.
-	</p>
-	<p>
-		More women reported never walking to school- about 8 percentage points higher than men and 31 percentage points higher than individuals in the 'Non-binary' category. However, women also reported walking to school four times a week at rates about 8 percentage points higher than men and 12 percentage points higher than those in the 'Non-binary' category. A similar pattern is observed for car travel to school. While a higher share of women than men and individuals in the 'Non-binary' category reported never driving to school or travelling as a car passenger, women also reported driving to school or travelling as a car passenger three, four or five times a week at higher rates than both men and those in the 'Non-binary' category (by about 4 to 8 percentage points). This pattern suggests that women who walk or travel by car to school are more likely to do so more consistently than men and individuals in the 'Non-binary' category. A similar pattern of consistency is observed for public transit and park-and-ride travel to school among women compared with those in the 'Non-binary' category.
-	</p>
-
-
-</div> -->
-
-<Footnotes {footnotes} />
 
 
 

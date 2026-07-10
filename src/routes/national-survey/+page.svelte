@@ -4,7 +4,10 @@
 	import { base } from '$app/paths';
 	import { nationalSurveyPages } from '$lib/nationalSurveyPages.js';
 	import PageFooter from '$lib/PageFooter.svelte';
+	import Password from '$lib/Password.svelte';
 </script>
+
+<Password/>
 
 <svelte:head>
 	<meta name="description" content="Key findings from the Mobilizing Justice National Survey on Transport Poverty in Canada"/>

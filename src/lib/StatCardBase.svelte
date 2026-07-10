@@ -63,6 +63,7 @@
 		margin-bottom: 32px;
 		perspective: 1200px;
 		touch-action: pan-y;
+		container-type: inline-size;
 	}
 
 	.flipper {
@@ -291,6 +292,34 @@
 
 		.flip-hint {
 			padding: 12px 32px 16px;
+		}
+	}
+
+	:global(.shared-label),
+	:global(.metric-label) {
+		font-family: RobotoRegular, sans-serif;
+		font-size: 18px;
+		color: var(--mjWhite);
+		margin: 0;
+		line-height: 1.4;
+	}
+
+	:global(.group-label),
+	:global(.bar-label) {
+		font-family: RobotoRegular, sans-serif;
+		font-size: 16px;
+		color: var(--mjWhite);
+	}
+
+	@media (max-width: 550px) {
+		:global(.shared-label),
+		:global(.metric-label) {
+			font-size: 15px;
+		}
+
+		:global(.group-label),
+		:global(.bar-label) {
+			font-size: 13px;
 		}
 	}
 </style>

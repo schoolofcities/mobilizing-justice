@@ -12,12 +12,12 @@ export const nationalSurveyPages = [
 	{
 		slug: "ethnicity",
 		title: "Ethnicity",
-		text: "Transport poverty can vary by racial and Indigenous identity because access to transportation is shaped by broader patterns of social, economic, and spatial inequality. In Canada, visible minority and Indigenous populations often experience distinct transportation barriers due to differences in income, housing location, employment opportunities, car access, transit service availability, and experiences of exclusion or discrimination."
+		text: "Transport poverty can vary by racial and Indigenous identity because access to transportation is shaped by broader patterns of social, economic, and spatial inequalities. In Canada, visible minority and Indigenous populations often experience distinct transportation barriers due to differences in income, housing location, employment opportunities, car access, transit service availability, and experiences of exclusion or discrimination."
 	},
 	{
 		slug: "immigration",
 		title: "Immigration Status",
-		text: "Transport poverty can also vary by immigration status because transportation needs and constraints may change with settlement stage, employment conditions, social networks, housing location, and familiarity with local transportation systems. Recent immigrants may face distinct barriers as they navigate new job markets, education systems, services, and transit networks."
+		text: "Transport poverty can also vary by immigration status because transportation needs and constraints may change with settlement stage, employment conditions, social networks, housing location, and familiarity with local transportation systems. Recent immigrants may face distinct barriers as they navigate new job markets, education systems, services, and transit networks, while long-term immigrants may experience transportation challenges differently as their resources, routines, and neighbourhood ties evolve over time."
 	},
 	{
 		slug: "age",
@@ -29,9 +29,9 @@ export const nationalSurveyPages = [
 		title: "Difficulties & Disabilities",
 		text: "Disability is a critical lens for understanding transport poverty because barriers to transportation can directly limit access to health care, employment, education, social participation, and community supports. Even when services exist, they may not be easy to reach for people with disabilities due to physical accessibility barriers, limited transit coverage, unreliable service, cost, or safety concerns."
 	},
-	{
-		slug: "transit-proximity",
-		title: "Transit Proximity",
-		text: "Transit proximity is an important dimension of transport poverty as distance to transit can shape whether people are able to use public transportation as a realistic alternative to driving, particularly for work, appointments, and social activities. The findings from the National Survey can help illuminate how proximity to transit translates to mobility perceptions."
-	}
+	// {
+	// 	slug: "transit-proximity",
+	// 	title: "Transit Proximity",
+	// 	text: "Transit proximity is an important dimension of transport poverty as distance to transit can shape whether people are able to use public transportation as a realistic alternative to driving, particularly for work, appointments, and social activities. The findings from the National Survey can help illuminate how proximity to transit translates to mobility perceptions."
+	// }
 ];

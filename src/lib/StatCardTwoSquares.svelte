@@ -63,14 +63,6 @@
 		width: 100%;
 	}
 
-	.shared-label {
-		font-family: RobotoRegular, sans-serif;
-		font-size: 18px;
-		color: var(--mjWhite);
-		margin: 0;
-		line-height: 1.4;
-	}
-
 	.comparison {
 		display: flex;
 		gap: 28px;
@@ -120,9 +112,6 @@
 	}
 
 	.group-label {
-		font-family: RobotoBold, sans-serif;
-		font-size: 15px;
-		color: var(--mjWhite);
 		letter-spacing: 0.03em;
 	}
 
@@ -189,8 +178,5 @@
 			height: 6px;
 		}
 
-		.shared-label {
-			font-size: 15px;
-		}
 	}
 </style>

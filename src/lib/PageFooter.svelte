@@ -3,9 +3,9 @@
 	import sofcLogo from '../assets/sofc-uoft-logo-blue-colour.svg?url';
 </script>
 
-<div class="footer-wrap">
+<div class="footer-wrap text">
 	<div class="credits-block">
-		<p class="data-note">
+		<p>
 			Research and writing: Paromita Nakshi, who else?<br>
 			Web development and data visualization: Jeff Allen
 		</p>
@@ -25,16 +25,20 @@
 
 <style>
 	.footer-wrap {
-		max-width: 500px;
-		width: 100%;
-		margin: 100px auto 0;
-		padding: 0 24px;
-		box-sizing: border-box;
+		margin-top: 100px;
+		padding-top: 0;
 	}
 
 	.credits-block {
-		padding: 48px 13px 40px;
+		padding: 48px 0 40px;
 		border-top: 1px solid var(--mjPaleGrey);
+	}
+
+	.credits-block p {
+		font-size: 14px;
+		line-height: 21px;
+		color: #555555;
+		margin: 0;
 	}
 
 	footer {

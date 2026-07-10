@@ -50,16 +50,10 @@
 	}
 
 	.metric-label {
-		font-family: RobotoBold, sans-serif;
-		font-size: 18px;
-		color: var(--mjWhite);
 		padding-bottom: 12px;
 	}
 
 	.bar-label {
-		font-family: RobotoRegular, sans-serif;
-		font-size: 14px;
-		color: var(--mjWhite);
 		opacity: 1;
 		white-space: nowrap;
 	}
@@ -73,10 +67,6 @@
 		.bar-label {
 			white-space: normal;
 			font-size: 12px;
-		}
-
-		.metric-label {
-			font-size: 15px;
 		}
 
 		.pct {
@@ -94,13 +84,14 @@
 
 	.bar {
 		flex: 0 0 auto;
-		align-self: stretch;
-		border-radius: 2px;
+		height: 20px;
+		align-self: center;
+		border-radius: 0;
 	}
 
 	.pct {
 		font-family: RobotoBold, sans-serif;
-		font-size: 17px;
+		font-size: 19px;
 		padding-left: 6px;
 		white-space: nowrap;
 		line-height: 1;

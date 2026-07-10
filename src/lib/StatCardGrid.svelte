@@ -15,11 +15,9 @@
 		width: 100%;
 		max-width: 1400px;
 		margin: 40px auto;
-		padding: 0 40px;
+		padding: 40px;
 		box-sizing: border-box;
 		border-top: solid 1px var(--mjPaleGrey);
-		padding-top: 50px;
-		padding-bottom: 50px;
 		border-bottom: solid 1px var(--mjPaleGrey);
 	}
 
@@ -47,7 +45,7 @@
 	.grid-container :global(.stat-card) {
 		width: 100%;
 		margin-top: 0;
-		margin-bottom: 40px;
+		margin-bottom: 25px;
 		break-inside: avoid;
 	}
 </style>

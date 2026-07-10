@@ -26,16 +26,11 @@
 	import StatCardBars from '$lib/StatCardBars.svelte';
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import Password from "$lib/Password.svelte";
-	import Footnotes from '$lib/Footnotes.svelte';
+	import Password from '$lib/Password.svelte';
 	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconTrain from '../../../assets/svg-icons/train.svg?url';
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
-
-	const footnotes = [
-		// { id: 1, text: "" },
-	];
 
 </script>
 
@@ -58,7 +53,7 @@
 
 
 
-<StatCardGrid maxCols={2}>
+<StatCardGrid>
 
 	<StatCardBars
 		icon={iconCar}
@@ -156,7 +151,6 @@
 
 </StatCardGrid>
 
-<Footnotes {footnotes} />
 
 
 <PageFooter/>

@@ -49,14 +49,6 @@
 		width: 100%;
 	}
 
-	.shared-label {
-		font-family: RobotoRegular, sans-serif;
-		font-size: 18px;
-		color: var(--mjWhite);
-		margin: 0;
-		line-height: 1.4;
-	}
-
 	.numbers-row {
 		display: flex;
 		flex-wrap: wrap;
@@ -81,19 +73,11 @@
 	}
 
 	.group-label {
-		font-family: RobotoBold, sans-serif;
-		font-size: 15px;
-		color: var(--mjWhite);
-		letter-spacing: 0.03em;
 	}
 
 	@media (max-width: 550px) {
 		.number {
 			font-size: 52px;
-		}
-
-		.shared-label {
-			font-size: 15px;
 		}
 
 		.numbers-row {

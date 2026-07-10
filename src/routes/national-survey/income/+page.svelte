@@ -25,10 +25,10 @@
 	import "../../../assets/global-styles.css";
 	import StatCardStack from '$lib/StatCardStack.svelte';
 	import StatCardBars from '$lib/StatCardBars.svelte';
-	import StatCardTwoSquares from "$lib/StatCardTwoSquares.svelte";
+	import StatCardTwoSquares from '$lib/StatCardTwoSquares.svelte';
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import Password from "$lib/Password.svelte";
+	import Password from '$lib/Password.svelte';
 	import PageFooter from '$lib/PageFooter.svelte';
 
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
@@ -38,14 +38,6 @@
 	import iconMoney from '../../../assets/svg-icons/attach_money.svg?url';
 	import iconClock from '../../../assets/svg-icons/schedule.svg?url';
 
-	const footnotes = [
-		{ id: 1, text: "Zhao, P., et al. (2018). Placeholder — full citation to be added." },
-		{ id: 2, text: "Ghimire, S., & Bardaka, E. (2024). Placeholder — full citation to be added." },
-		{ id: 3, text: "Nakshi, M., et al. (2025). Placeholder — full citation to be added." },
-		{ id: 4, text: "Lucas, K. (2012). Placeholder — full citation to be added." },
-		{ id: 5, text: "Ralph, K. (2018). Placeholder — full citation to be added." },
-		{ id: 6, text: "Connaughton, J., et al. (2026). Placeholder — full citation to be added." },
-	];
 
 </script>
 
@@ -71,7 +63,7 @@
 
 
 
-<StatCardGrid maxCols={2}>
+<StatCardGrid>
 
 	<StatCardStack
 		icon={iconCar}
@@ -96,15 +88,15 @@
 			{
 				label: "Take public transit to work 5× per week (%)",
 				bars: [
-					{ label: "Individuals in low-income households", value: 22 },
-					{ label: "Individuals in high-income households", value: 15 }
+					{ label: "Individuals in low-income* households", value: 22 },
+					{ label: "Individuals in high-income* households", value: 15 }
 				]
 			},
 			{
 				label: "Transit pass ownership (%)",
 				bars: [
-					{ label: "Individuals in low-income households", value: 15 },
-					{ label: "Individuals in high-income households", value: 4 }
+					{ label: "Individuals in low-income* households", value: 15 },
+					{ label: "Individuals in high-income* households", value: 4 }
 				]
 			}
 		]}
@@ -124,10 +116,10 @@
 	<StatCardTwoSquares
 		icon={iconBuilding}
 		context="Transport barriers are costing low-income residents job opportunities"
-		sharedLabel="Percent of respondents that agreed or strongly agreed that their transport situation has led them to decline employment opportunities"
+		sharedLabel="Respondents that agreed or strongly agreed that they have declined employment opportunities due to their transport situation (%)"
 		stats={[
-			{ stat: 35, color: "var(--mjYellow)", label: "of low-income respondents" },
-			{ stat: 21, color: "var(--mjGreen)",  label: "of high-income respondents" }
+			{ stat: 35, color: "var(--mjYellow)", label: "Low-income* respondents" },
+			{ stat: 21, color: "var(--mjGreen)",  label: "High-income* respondents" }
 		]}
 		backText="
 			<p>
@@ -149,15 +141,15 @@
 			{
 				label: "Walk to work at least once per week (%)",
 				bars: [
-					{ label: "Individuals in low-income households", value: 32 },
-					{ label: "Individuals in high-income households", value: 22 }
+					{ label: "Individuals in low-income* households", value: 32 },
+					{ label: "Individuals in high-income* households", value: 22 }
 				]
 			},
 			{
 				label: "Bike to work at least once per week (%) [PLACEHOLDER DATA]",
 				bars: [
-					{ label: "Individuals in low-income households", value: 7 },
-					{ label: "Individuals in high-income households", value: 2 }
+					{ label: "Individuals in low-income* households", value: 7 },
+					{ label: "Individuals in high-income* households", value: 2 }
 				]
 			}
 		]}
@@ -177,10 +169,10 @@
 	<StatCardStack
 		icon={iconMoney}
 		context="Affordability is the main reason low-income individuals can't travel the way they prefer"
-		sharedLabel="Percent of respondents that identified affordability as a reason they do not use their preferred mode of transport"
+		sharedLabel="Respondents that identified affordability as a reason they do not use their preferred mode of transport (%)"
 		stats={[
-			{ stat: "17%", color: "var(--mjYellow)", label: "of low-income residents" },
-			{ stat: "4%",  color: "var(--mjGreen)",  label: "of high-income residents" }
+			{ stat: "17%", color: "var(--mjYellow)", label: "Low-income* residents" },
+			{ stat: "4%",  color: "var(--mjGreen)",  label: "High-income* residents" }
 		]}
 		backText="
 			<p>
@@ -197,8 +189,8 @@
 		context="Longer commutes and congestion are more common among high-income residents"
 		sharedLabel="Percent of respondents that agreed or strongly agreed that it takes too long to travel to work [PLACEHOLDER DATA]"
 		stats={[
-			{ stat: "20%", color: "var(--mjYellow)", label: "of low-income residents" },
-			{ stat: "30%", color: "var(--mjGreen)",  label: "of high-income residents" }
+			{ stat: "20%", color: "var(--mjYellow)", label: "Low-income* residents" },
+			{ stat: "30%", color: "var(--mjGreen)",  label: "High-income* residents" }
 		]}
 		backText="
 			<p>
@@ -216,7 +208,7 @@
 </StatCardGrid>
 
 <div class="text">
-	<p class="data-note">Low-income households are those that make less than $60,000 before tax (n = 200). High-income households are those that make more than $120,000 before tax (n = 320).</p>
+	<p class="data-note">*Low-income households are those that make less than $60,000 before tax (n = 200). *High-income households are those that make more than $120,000 before tax (n = 320).</p>
 </div>
 
 <div class="text">
@@ -240,17 +232,17 @@
 		Low-income individuals reported taking public transit to work more than middle- and high-income individuals. For instance, the share of low-income respondents taking public transit to work five times a week is 11 percentage points higher than that of high-income respondents. They also reported driving less than the other two income groups.
 	</p>
 	<p>
-		There are modest differences among income groups in the use of active transportation to work. The gap between high- and low-income individuals who never walk or bike to work is approximately 10 and 7 percentage points, respectively. Similarly, the gap between middle- and low-income individuals who never walk or bike to work is approximately 8 and 6 percentage points, respectively. The share of individuals who walk to work five times per week is nearly 6 percentage points higher among low-income individuals than among high-income individuals. Overall, the findings indicate that low-income individuals use active transportation for commuting at slightly higher rates than middle- and high-income groups, which is consistent with previous literature<Footnote id={[1, footnotes[0].text]} /><Footnote id={[2, footnotes[1].text]} />.
+		There are modest differences among income groups in the use of active transportation to work. The gap between high- and low-income individuals who never walk or bike to work is approximately 10 and 7 percentage points, respectively. Similarly, the gap between middle- and low-income individuals who never walk or bike to work is approximately 8 and 6 percentage points, respectively. The share of individuals who walk to work five times per week is nearly 6 percentage points higher among low-income individuals than among high-income individuals. Overall, the findings indicate that low-income individuals use active transportation for commuting at slightly higher rates than middle- and high-income groups, which is consistent with previous literature.
 	</p>
 	<p>
-		Fewer low-income individuals reported never using a taxi or ride-hailing to work, nearly 6 percentage points lower than the other two income groups. This may be attributed to lower car ownership among low-income populations, as noted before, and reliance on public transit, which can be unreliable at times, or active transportation, which might be inconvenient during adverse weather conditions. The use of taxis or ride-hailing services among individuals living in transport poverty conditions has been reported in previous MJ research as well<Footnote id={[3, footnotes[2].text]} />.
+		Fewer low-income individuals reported never using a taxi or ride-hailing to work, nearly 6 percentage points lower than the other two income groups. This may be attributed to lower car ownership among low-income populations, as noted before, and reliance on public transit, which can be unreliable at times, or active transportation, which might be inconvenient during adverse weather conditions. The use of taxis or ride-hailing services among individuals living in transport poverty conditions has been reported in previous MJ research as well.
 	</p>
 
 	<h2>
 		Barriers to participation
 	</h2>
 	<p>
-		Low-income respondents showed higher agreement that transport constraints led them to decline employment opportunities (mean Likert ratings: 43.28±32.03, 35.21±31.62 and 28.93±29.13, respectively, for low-, middle- and high-income respondents), suggesting that higher income is associated with a lower likelihood of foregoing employment opportunities due to transport-related challenges. These findings suggest that transportation disadvantages contribute to a vicious cycle of transport-related social exclusion and socioeconomic disadvantage, particularly among low-income populations<Footnote id={[4, footnotes[3].text]} />. Similar patterns were observed for not pursuing education due to transportation barriers, suggesting the potential for longitudinal and intergenerational transport poverty, as reduced educational participation may limit access to better employment opportunities<Footnote id={[5, footnotes[4].text]} />.
+		Low-income respondents showed higher agreement that transport constraints led them to decline employment opportunities (mean Likert ratings: 43.28±32.03, 35.21±31.62 and 28.93±29.13, respectively, for low-, middle- and high-income respondents), suggesting that higher income is associated with a lower likelihood of foregoing employment opportunities due to transport-related challenges. These findings suggest that transportation disadvantages contribute to a vicious cycle of transport-related social exclusion and socioeconomic disadvantage, particularly among low-income populations. Similar patterns were observed for not pursuing education due to transportation barriers, suggesting the potential for longitudinal and intergenerational transport poverty, as reduced educational participation may limit access to better employment opportunities.
 	</p>
 	<p>
 		Among individuals with a driver’s license and at least one car in the household, the mean Likert ratings are nearly identical among the three income groups when it comes to perceptions of forced car ownership. The proportion reporting near-ideal or neutral perceptions of car ownership (Likert rating 45–55) is about 5 percentage points higher among low-income individuals than among high-income individuals. Fewer low-income individuals also reported being forced to own a car than did members of the other two income groups. These findings suggest that income may not have a straightforward relationship with perceptions of forced car ownership.
@@ -267,6 +259,5 @@
 
 </div>
 
-<!-- <Footnotes {footnotes} /> -->
 
 <PageFooter/>

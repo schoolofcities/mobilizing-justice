@@ -24,20 +24,17 @@
 
 	import "../../../assets/global-styles.css";
 	import StatCardStack from '$lib/StatCardStack.svelte';
+	import StatCardBars from '$lib/StatCardBars.svelte';
 	import StatCardTwoSquares from '$lib/StatCardTwoSquares.svelte';
 	import StatCardGrid from '$lib/StatCardGrid.svelte';
 	import TitleText from '$lib/TitleText.svelte';
-	import Password from "$lib/Password.svelte";
-	import Footnotes from '$lib/Footnotes.svelte';
+	import Password from '$lib/Password.svelte';
 	import PageFooter from '$lib/PageFooter.svelte';
 
-	import iconWalk from '../../../assets/svg-icons/directions_walk.svg?url';
 	import iconCar from '../../../assets/svg-icons/directions_car.svg?url';
 	import iconBuilding from '../../../assets/svg-icons/domain.svg?url';
-
-	const footnotes = [
-		// { id: 1, text: "" },
-	];
+	import iconTrain from '../../../assets/svg-icons/train.svg?url';
+	import iconMoney from '../../../assets/svg-icons/attach_money.svg?url';
 
 </script>
 
@@ -60,14 +57,14 @@
 
 
 
-<StatCardGrid maxCols={2}>
+<StatCardGrid>
 
 	<StatCardStack
-		icon={iconWalk}
+		icon={iconTrain}
 		context="Individuals with difficulties or disabilities have access to fewer transport options than they would like"
-		sharedLabel="Agreed or strongly agreed that they have access to fewer transport options than they would like"
+		sharedLabel="Agreed or strongly agreed that they have access to fewer transport options than they would like (%)"
 		stats={[
-			{ stat: "41%", label: "Individuals with disabilities", color: "var(--mjYellow)" },
+			{ stat: "41%", label: "Individuals with disabilities*",    color: "var(--mjYellow)" },
 			{ stat: "29%", label: "Individuals without disabilities", color: "var(--mjGreen)" }
 		]}
 		backText="
@@ -77,29 +74,39 @@
 		"
 	/>
 
-	<StatCardTwoSquares
+	<StatCardBars
 		icon={iconCar}
 		context="Road safety concerns affect individuals with disabilities more"
-		sharedLabel="Agreed or strongly agreed that they feel safe from road accidents while travelling"
-		stats={[
-			{ stat: 38, color: "var(--mjYellow)", label: "Individuals with disabilities" },
-			{ stat: 51, color: "var(--mjGreen)",  label: "Individuals without disabilities" }
+		groups={[
+			{
+				label: "Agreed or strongly agreed that they feel safe from traffic-related injuries or fatalities while travelling (%)",
+				bars: [
+					{ label: "Individuals with disabilities*", value: 38 },
+					{ label: "Individuals without disabilities", value: 51 }
+				]
+			}
 		]}
+		colors={['var(--mjYellow)', 'var(--mjGreen)']}
 		backText="
 			<p>
-				The share of individuals with disabilities who agree or strongly agree that they feel safe from road accidents while travelling is 13 percentage points lower than that of those without disabilities. This finding may suggest implicit ableism in built infrastructure.
+				The share of individuals with disabilities who agree or strongly agree that they feel safe from traffic-related injuries or fatalities while travelling is 13 percentage points lower than that of those without disabilities. This finding may suggest implicit ableism in built infrastructure.
 			</p>
 		"
 	/>
 
-	<StatCardTwoSquares
+	<StatCardBars
 		icon={iconBuilding}
 		context="Individuals with disabilities reported more inadequate access to mental health care"
-		sharedLabel="Agreed or strongly agreed that they can easily reach mental health support"
-		stats={[
-			{ stat: 53, color: "var(--mjYellow)", label: "Individuals with disabilities" },
-			{ stat: 64, color: "var(--mjGreen)",  label: "Individuals without disabilities" }
+		groups={[
+			{
+				label: "Agreed or strongly agreed that they can easily reach mental health support (%)",
+				bars: [
+					{ label: "Individuals with disabilities*",    value: 53 },
+					{ label: "Individuals without disabilities", value: 64 }
+				]
+			}
 		]}
+		colors={['var(--mjYellow)', 'var(--mjGreen)']}
 		backText="
 			<p>
 				The share of individuals with disabilities who agree or strongly agree that they can easily reach mental health care, support groups, or recovery meetings is 11 percentage points lower than the share among individuals without disabilities. A similar pattern is observed for access to gyms, teams, or hobby clubs, where individuals with disabilities are also 11 percentage points less likely to report easy access.
@@ -107,9 +114,30 @@
 		"
 	/>
 
+	<StatCardBars
+		icon={iconMoney}
+		context="Individuals with disabilities reported lower satisfaction with their current transport conditions"
+		groups={[
+			{
+				label: "Reported high satisfaction with their current transport conditions (%)",
+				bars: [
+					{ label: "Individuals with disabilities*", value: 53 },
+					{ label: "Individuals without disabilities", value: 64 }
+				]
+			}
+		]}
+		colors={['var(--mjYellow)', 'var(--mjGreen)']}
+		backText="
+			<p>
+				The share of individuals with disabilities reporting high satisfaction with their current transport conditions is 11 percentage points higher than those without any disabilities. Individuals with disabilities reported at an 8 percentage point higher rate than those without disabilities that they spend more money on transportation than they can afford. Similarly, the share of individuals with disabilities self-reporting high ease in reaching necessary destinations is 11 percentage points lower than those without any disabilities.
+			</p>
+		"
+	/>
+
 </StatCardGrid>
 
-<Footnotes {footnotes} />
-
+<div class="text">
+	<p class="data-note">*"Disability" refers to respondents who reported experiencing at least some level of long-term difficulty (lasting or expected to last six months or more) in one or more functional areas. In this dashboard, respondents were categorized as having a disability if they answered "sometimes," "often," or "always" to questions related to difficulties with seeing, hearing, physical activities and mobility, learning or concentrating, or emotional, psychological, or mental health conditions. This simplified yes/no grouping was created as a proxy to support analysis while recognizing a broad range of physical, cognitive, sensory, and mental health-related experiences.</p>
+</div>
 
 <PageFooter/>
