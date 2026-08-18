@@ -11,7 +11,7 @@ This guide is for anyone who wants to edit the text on the survey result cards (
 
 ## 2. Where the pages live
 
-Each of the 8 survey topics is one file:
+Each of the 8 survey topics are contained in their own file:
 
 ```
 src/routes/national-survey/<topic-name>/+page.svelte
@@ -24,7 +24,7 @@ For example, to edit the Disabilities page, open:
 
 ## 3. What's safe to edit in each file
 
-Everything else in the file is code/formatting — leave it alone. The editable text lives in a few specific spots:
+The editable text lives in a few specific spots. (Try to leave everything else alone, as it might break formatting/layout)
 
 - **Page intro text** — inside `<div class="text"> <p> ... </p> </div>` near the top (and sometimes a footnote `<p class="data-note">` near the bottom).
 - **Each card** is a block like `<StatCardBars ...> ... </StatCardBars>` (or `StatCardStack`, `StatCardTwoSquares`, `StatCardGrid`). Within each card block, only edit the text **inside quotation marks** for these properties:
@@ -46,8 +46,8 @@ Everything else in the file is code/formatting — leave it alone. The editable 
         {
             label: "Agreed or strongly agreed that they feel safe...(%)",     <!-- editable -->
             bars: [
-                { label: "Individuals with disabilities*", value: 38 },       <!-- label editable, leave value alone -->
-                { label: "Individuals without disabilities", value: 51 }
+                { label: "Individuals with disabilities*", value: 38 },       <!-- label editable, value editable -->
+                { label: "Individuals without disabilities", value: 51 }      <!-- label editable, value editable -->
             ]
         }
     ]}
@@ -74,9 +74,9 @@ Everything else in the file is code/formatting — leave it alone. The editable 
 - **Don't touch numbers unless updating data**: `value:` and `stat:` fields drive the chart itself — text-only edits shouldn't change these unless the underlying stat actually changed.
 - **No live preview**: GitHub's web editor doesn't render the actual page, so a maintainer should review the rendered page before merging. If you are interested in having a live preview, read below.
 
-## Local development
+## Local development (optional)
 
-If you'd like to see your changes rendered on the actual page before opening a PR (rather than relying on a maintainer to check), you can run the site locally. This requires some knowledge of working in terminal/command line on your computer.
+If you'd like to see your changes rendered on the actual page before opening a PR, you can run the site locally. This requires some knowledge of working in terminal/command line on your computer.
 
 1. **Install Node.js**: download and install the current LTS version from [nodejs.org](https://nodejs.org) (this includes `npm`). Node 20 or later is recommended.
 2. **Clone the repo**: instead of editing in the browser, clone your fork to your computer:
