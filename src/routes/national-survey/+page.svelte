@@ -33,11 +33,20 @@
 
 <div class="card-grid">
 	{#each nationalSurveyPages as page}
-		<a href="{base}/national-survey/{page.slug}" class="page-card">
-			<div class="card-title">{page.title}</div>
-			<p class="card-text">{page.text}</p>
-			<span class="card-link"><span class="card-link-text">View findings</span> →</span>
-		</a>
+		{#if page.live}
+			<a href="{base}/national-survey/{page.slug}" class="page-card">
+				<div class="card-title">{page.title}</div>
+				<p class="card-text">{page.text}</p>
+				<span class="card-link"><span class="card-link-text">View findings</span> →</span>
+			</a>
+		{:else}
+			<div class="page-card coming-soon">
+				<div class="coming-soon-badge">Coming soon</div>
+				<div class="card-title">{page.title}</div>
+				<p class="card-text">{page.text}</p>
+				<span class="card-link"><span class="card-link-text">View findings</span> →</span>
+			</div>
+		{/if}
 	{/each}
 </div>
 
@@ -87,6 +96,31 @@
 
 	.page-card:hover {
 		background-color: color-mix(in srgb, var(--mjBlue) 85%, white);
+	}
+
+	.page-card.coming-soon {
+		position: relative;
+		opacity: 0.2;
+		cursor: default;
+	}
+
+	.page-card.coming-soon:hover {
+		background-color: var(--mjBlue);
+	}
+
+	.coming-soon-badge {
+		position: absolute;
+		top: 16px;
+		right: 16px;
+		background-color: var(--mjWhite);
+		color: var(--mjBlue);
+		font-family: RobotoBold, sans-serif;
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		padding: 6px 12px;
+		border-radius: 999px;
+		opacity: calc(1 / 0.2);
 	}
 
 	.card-title {
