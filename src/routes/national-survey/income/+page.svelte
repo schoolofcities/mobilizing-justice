@@ -76,7 +76,10 @@
 		label2="of individuals living in high-income households do not own a private vehicle"
 		backText="
 			<p>
-				31% of low-income individuals do not own a private vehicle, compared to fewer than 3% of high-income individuals. Low-income individuals are also more likely to hold a transit pass, at a rate 7 percentage points higher than high-income individuals. Without access to a car, daily travel depends heavily on transit and active modes. As a result, low-income individuals walk and take public transit to work at considerably higher rates than middle- and high-income groups, and report driving much less.
+				31% of low-income individuals do not own a private vehicle, compared to fewer than 3% of high-income individuals. Without access to a car, daily travel depends heavily on transit and active modes. As a result, low-income individuals walk and take public transit to work at considerably higher rates than middle- and high-income groups, and report driving much less.
+			</p>
+			<p>
+				Fewer low-income individuals reported never using a taxi or ride-hailing to work, nearly 6 percentage points lower than the other two income groups. This may be attributed to lower car ownership among low-income populations and reliance on public transit, which can be unreliable at times, or active transportation, which might be inconvenient during adverse weather conditions.
 			</p>
 		"
 	/>
@@ -88,21 +91,21 @@
 			{
 				label: "Take public transit to work 5× per week (%)",
 				bars: [
-					{ label: "Individuals in low-income* households", value: 22 },
-					{ label: "Individuals in high-income* households", value: 15 }
+					{ label: "Individuals in low-income* households", value: 15 },
+					{ label: "Individuals in high-income* households", value: 4 }
 				]
 			},
 			{
 				label: "Transit pass ownership (%)",
 				bars: [
-					{ label: "Individuals in low-income* households", value: 15 },
-					{ label: "Individuals in high-income* households", value: 4 }
+					{ label: "Individuals in low-income* households", value: 22 },
+					{ label: "Individuals in high-income* households", value: 15 }
 				]
 			}
 		]}
 		backText="
 			<p>
-				22% of low-income individuals take public transit to work five times a week, compared to 15% of high-income individuals, a gap of 11 percentage points. Transit pass ownership follows the same pattern, at 15% among low-income households versus just 4% among high-income households.
+				15% of low-income individuals take public transit to work five times a week, compared to 4% of high-income individuals, a gap of 11 percentage points. Transit pass ownership follows the same pattern, at 22% among low-income households versus 15% among high-income households.
 			</p>
 			<p>
 				These patterns highlight the greater dependence of low-income individuals on public transit for everyday mobility, suggesting the importance of affordable, reliable, and accessible public transit.
@@ -126,42 +129,10 @@
 				35% of low-income individuals agreed or strongly agreed that their transport situation has led them to decline employment opportunities, compared to 21% of high-income individuals.
 			</p>
 			<p>
-				Similar patterns were found for education. Low-income respondents were more likely to report not pursuing education due to transport barriers. Reduced educational participation may limit access to better employment over time, suggesting transport disadvantage can compound across generations.
+				Similar patterns were found for educational opportunities. Low-income respondents were more likely to report not pursuing education due to transport barriers. Reduced educational participation may limit access to better employment over time, suggesting transport disadvantage can compound across generations.
 			</p>
 			<p>
 				It is also worth noting that this figure may underestimate the true impact. Low-income individuals who have grown accustomed to recurring transport constraints may no longer consciously register them as barriers, even though these challenges may still limit where they can go and what opportunities they can access.
-			</p>
-		"
-	/>
-
-	<StatCardBars
-		icon={iconWalk}
-		context="Low-income residents walk and bike more frequently"
-		groups={[
-			{
-				label: "Walk to work at least once per week (%)",
-				bars: [
-					{ label: "Individuals in low-income* households", value: 32 },
-					{ label: "Individuals in high-income* households", value: 22 }
-				]
-			},
-			{
-				label: "Bike to work at least once per week (%) [PLACEHOLDER DATA]",
-				bars: [
-					{ label: "Individuals in low-income* households", value: 7 },
-					{ label: "Individuals in high-income* households", value: 2 }
-				]
-			}
-		]}
-		backText="
-			<p>
-				32% of low-income individuals walk to work at least once a week, compared to 22% of high-income individuals. The share who walk to work five times per week is nearly 6 percentage points higher among low-income individuals than high-income individuals. A similar pattern holds for cycling: the share who never bike to work is around 7 to 10 percentage points lower among low-income individuals than middle- and high-income groups.
-			</p>
-			<p>
-				For low-income individuals, this is more likely to reflect necessity than preference. High-income individuals who walk tend to compare it against driving, with its fuel and parking costs, making walking feel affordable and enjoyable. Low-income individuals are more likely to compare walking against subsidized transit, which makes that affordability advantage much less obvious.
-			</p>
-			<p>
-				This may help explain why high-income individuals rated walking as safer, more enjoyable, and more affordable than low-income individuals did. High-income individuals tend to walk by choice in safer neighbourhoods, which shapes more positive perceptions. Low-income individuals are more likely to walk out of necessity, and this context changes how the experience feels.
 			</p>
 		"
 	/>
@@ -180,24 +151,6 @@
 			</p>
 			<p>
 				Among those who owned a vehicle, perceptions of forced car ownership were nearly identical across income groups. The proportion with near-neutral perceptions of car ownership was about 5 percentage points higher among low-income individuals than high-income individuals, suggesting the relationship between income and car ownership pressure is not straightforward.
-			</p>
-		"
-	/>
-
-	<StatCardStack
-		icon={iconClock}
-		context="Longer commutes and congestion are more common among high-income residents"
-		sharedLabel="Percent of respondents that agreed or strongly agreed that it takes too long to travel to work [PLACEHOLDER DATA]"
-		stats={[
-			{ stat: "20%", color: "var(--mjYellow)", label: "Low-income* residents" },
-			{ stat: "30%", color: "var(--mjGreen)",  label: "High-income* residents" }
-		]}
-		backText="
-			<p>
-				High-income individuals reported longer commute times and more peak-hour congestion than low-income individuals. High-income individuals, with greater access to private vehicles, may commute from further away and have access to a larger job catchment area. Higher car use also increases exposure to traffic congestion compared to those who bike or use rapid transit.
-			</p>
-			<p>
-				It is also possible that high-income individuals are more likely to work standard 9-to-5 schedules, placing them squarely in peak congestion periods. Low-income respondents may have adjusted their expectations around recurring transport constraints, which could suppress how they rate commute time even when objectively facing difficult conditions.
 			</p>
 		"
 	/>
