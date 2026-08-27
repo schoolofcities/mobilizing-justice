@@ -183,7 +183,7 @@
 </StatCardGrid>
 
 <div class="text">
-	<p class="data-note">*Non-binary refers to respondents whose gender identity falls outside the traditional male/female binary or who selected a gender-diverse identity. This category includes responses from individuals identifying as trans man, trans woman, Two-Spirit, bigender, genderqueer, non-binary, agender, demigender, genderfluid, as well as those who preferred not to answer or selected "other" and provided a self-described identity. This grouping was created to ensure sufficient sample size and protect respondent confidentiality while recognizing the diversity of gender identities represented in the survey.</p>
+	<p class="data-note">*Non-binary refers to respondents whose gender identity falls outside the traditional man/woman binary or who selected a gender-diverse identity. This category includes responses from individuals identifying as trans man, trans woman, Two-Spirit, bigender, genderqueer, non-binary, agender, demigender, genderfluid, as well as those who preferred not to answer or selected "other" and provided a self-described identity. This grouping was created to ensure sufficient sample size and protect respondent confidentiality while recognizing the diversity of gender identities represented in the survey.</p>
 </div>
 
 
