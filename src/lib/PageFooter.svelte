@@ -6,8 +6,8 @@
 <div class="footer-wrap text">
 	<div class="credits-block">
 		<p>
-			Research and writing: Paromita Nakshi, who else?<br>
-			Web development and data visualization: Jeff Allen
+			<i>Research and writing:</i> Paromita Nakshi, Andrei Botescu, Ignacio Tiznado-Aitken and Steven Farber<br>
+			<i>Web development and data visualization:</i> Jeff Allen
 		</p>
 	</div>
 
@@ -39,6 +39,11 @@
 		line-height: 21px;
 		color: #555555;
 		margin: 0;
+	}
+
+	.credits-block i {
+		font-family: RobotoItalic, sans-serif;
+		font-style: normal;
 	}
 
 	footer {
