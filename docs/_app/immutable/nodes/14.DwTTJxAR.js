@@ -14,7 +14,7 @@ import{a as d,f as c}from"../chunks/CmLzxgXN.js";import"../chunks/nAgQRCWq.js";i
 			<p>
 				A key part of the context here is modal mismatch. Nearly 25% of gender-diverse individuals reported travelling by a mode they would not choose if alternatives were available, a noticeably higher rate than among women and men. When people are forced into transport arrangements that do not meet their needs, the downstream effects on employment access, healthcare access, and quality of life are real and compounding.
 			</p>
-		`});var p=t(x,2);ae(p,{get icon(){return ne},context:"gender-diverse individuals rely more on transit and less on private vehicles",sharedLabel:"Respondents with access to a private vehicle (%)",stats:[{stat:85,color:"var(--brandLightPurple)",label:"Women"},{stat:86,color:"var(--mjGreen)",label:"Men"},{stat:67,color:"var(--mjYellow)",label:"Gender-diverse*"}],backText:`
+		`});var p=t(x,2);ae(p,{get icon(){return ne},context:"Gender-diverse individuals rely more on transit and less on private vehicles",sharedLabel:"Respondents with access to a private vehicle (%)",stats:[{stat:85,color:"var(--brandLightPurple)",label:"Women"},{stat:86,color:"var(--mjGreen)",label:"Men"},{stat:67,color:"var(--mjYellow)",label:"Gender-diverse*"}],backText:`
 			<p>
 				Gender-diverse individuals reported private vehicle access nearly 19 percentage points lower than both men and women. They also hold transit passes at a rate about 13–15 percentage points higher (33%, compared to 18% of women and 20% of men), reflecting a much greater reliance on public transit for daily travel.
 			</p>

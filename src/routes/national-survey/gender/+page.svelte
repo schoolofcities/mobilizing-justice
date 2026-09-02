@@ -122,7 +122,7 @@
 
 	<StatCardTwoSquares
 		icon={iconCar}
-		context="gender-diverse individuals rely more on transit and less on private vehicles"
+		context="Gender-diverse individuals rely more on transit and less on private vehicles"
 		sharedLabel="Respondents with access to a private vehicle (%)"
 		stats={[
 			{ stat: 85, color: "var(--brandLightPurple)", label: "Women" },
