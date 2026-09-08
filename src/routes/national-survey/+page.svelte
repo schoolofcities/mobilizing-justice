@@ -7,7 +7,6 @@
 	import Password from '$lib/Password.svelte';
 </script>
 
-<Password/>
 
 <svelte:head>
 	<meta name="description" content="Key findings from the Mobilizing Justice National Survey on Transport Poverty in Canada"/>

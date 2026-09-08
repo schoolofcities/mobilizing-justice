@@ -16,7 +16,6 @@
 	<title>Gender | Mobilizing Justice National Survey</title>
 </svelte:head>
 
-<Password/>
 
 
 
