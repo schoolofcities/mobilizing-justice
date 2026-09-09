@@ -1,1 +1,0 @@
-import{c as t,a as c}from"./EliqfpPt.js";import{f as i,E as p,F as m}from"./DgrC0y3J.js";import{B as f}from"./jRQ_9Zv0.js";function l(n,r,...a){var o=new f(n);i(()=>{const e=r()??null;o.ensure(e,e&&(s=>e(s,...a)))},p)}function E(n,r){var a=t(),o=m(a);l(o,()=>r.children),c(n,a)}export{E as L};

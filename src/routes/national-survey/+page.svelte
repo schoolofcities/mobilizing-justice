@@ -39,7 +39,7 @@
 				<span class="card-link"><span class="card-link-text">View findings</span> →</span>
 			</a>
 		{:else}
-			<div class="page-card coming-soon">
+			<div class="page-card coming-soon" aria-hidden="true">
 				<div class="coming-soon-badge">Coming soon</div>
 				<div class="card-title">{page.title}</div>
 				<p class="card-text">{page.text}</p>
@@ -101,6 +101,8 @@
 		position: relative;
 		opacity: 0.2;
 		cursor: default;
+		-webkit-user-select: none;
+		user-select: none;
 	}
 
 	.page-card.coming-soon:hover {
