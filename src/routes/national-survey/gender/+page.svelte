@@ -49,10 +49,10 @@
 <div class="text">
 
 	<p>
-		How people get around is shaped by gender. Travel needs, safety concerns, and the barriers people face are not the same across genders. Women and gender-diverse people often make more complex trips and encounter greater challenges around affordability, safety, and service reliability.
+		How people get around is shaped by gender*. Travel needs, safety concerns, and the barriers people face are not the same across genders. Women and gender-diverse people often make more complex trips and encounter greater challenges around affordability, safety, and service reliability.
 	</p>
 	<p>
-		These findings come from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>. Women are less likely to cycle and more likely to find transportation unaffordable than men. gender-diverse individuals face the sharpest barriers: lower vehicle access, higher transit reliance, and transport costs and healthcare access gaps that far exceed those reported by women and men.
+		These findings come from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>. Women are less likely to cycle and more likely to find transportation unaffordable than men. Gender-diverse individuals face the sharpest barriers: lower vehicle access, higher transit reliance, and transport costs and healthcare access gaps that far exceed those reported by women and men.
 	</p>
 
 </div>
@@ -67,7 +67,7 @@
 		columns={[
 			{ label: "Women",      color: "var(--brandLightPurple)" },
 			{ label: "Men",        color: "var(--mjGreen)" },
-			{ label: "Gender-diverse*", color: "var(--mjYellow)" }
+			{ label: "Gender-diverse**", color: "var(--mjYellow)" }
 		]}
 		rows={[
 			{ label: "Never bike to work",   values: [85, 70, 66] },
@@ -179,7 +179,8 @@
 </StatCardGrid>
 
 <div class="text">
-	<p class="data-note">*Gender-diverse refers to respondents whose reported gender identity falls outside cisgender and/or binary understandings of gender. This analytical category includes respondents identifying as trans man, trans woman, Two-Spirit, bigender, genderqueer, non-binary, agender, demigender, genderfluid, as well as respondents who selected “prefer not to answer” or “other” and provided a self-described gender identity indicating a gender-diverse identity. These identities were aggregated into a single analytical category to ensure sufficient sample size and protect respondent confidentiality. This grouping is an analytical decision and does not imply that the identities represented are equivalent or constitute a homogeneous population; rather, it reflects the diversity of gender identities captured by the survey while allowing for meaningful statistical analysis.</p>
+	<p class="data-note">*Survey results are presented using three gender categories: women, men, and gender-diverse. The valid total raw sample size is 27,031, comprising 15,977 women (59.1%), 10,542 men (39.0%), and 512 gender-diverse respondents (1.9%). To ensure that the results are representative of the Canadian population, analyses use weighted sample sizes: 30,554,081 in total, including 15,454,297 women (50.6%), 14,645,957 men (47.9%), and 453,827 gender-diverse respondents (1.5%).</p>
+	<p class="data-note">**Gender-diverse refers to respondents whose reported gender identity falls outside cisgender and/or binary understandings of gender. This analytical category includes respondents identifying as trans man, trans woman, Two-Spirit, bigender, genderqueer, non-binary, agender, demigender, genderfluid, as well as respondents who selected “prefer not to answer” or “other” and provided a self-described gender identity indicating a gender-diverse identity. These identities were aggregated into a single analytical category to ensure sufficient sample size and protect respondent confidentiality. This grouping is an analytical decision and does not imply that the identities represented are equivalent or constitute a homogeneous population; rather, it reflects the diversity of gender identities captured by the survey while allowing for meaningful statistical analysis.</p>
 </div>
 
 
