@@ -52,7 +52,7 @@
 <div class="text">
 
 	<p>
-		In Canada, household income shapes nearly every aspect of how people get around. What modes people can afford, how far they can realistically travel, and whether transportation opens up opportunities or closes them off all vary significantly by income.
+		In Canada, household income shapes nearly every aspect of how people get around*. What modes people can afford, how far they can realistically travel, and whether transportation opens up opportunities or closes them off all vary significantly by income.
 	</p>
 	<p>
 		These findings come from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>. Across Canada, lower-income households face compounding disadvantages: less access to cars, affordability impacting travel choices, and transportation barriers reducing employment opportunities.
@@ -69,10 +69,10 @@
 		context="Low-income households are far less likely to own private vehicles"
 		stat1="31%"
 		color1="var(--mjYellow)"
-		label1="of individuals living in low-income households do not own a private vehicle"
+		label1="of individuals living in low-income* households do not own a private vehicle"
 		stat2="3%"
 		color2="var(--mjGreen)"
-		label2="of individuals living in high-income households do not own a private vehicle"
+		label2="of individuals living in high-income* households do not own a private vehicle"
 		backText="
 			<p>
 				31% of low-income individuals do not own a private vehicle, compared to fewer than 3% of high-income individuals. Without access to a car, daily travel depends heavily on transit and active modes. As a result, low-income individuals walk and take public transit to work at considerably higher rates than middle- and high-income groups, and report driving much less.
@@ -160,7 +160,7 @@
 </StatCardGrid>
 
 <div class="text">
-	<p class="data-note">*Low-income households are those that make less than $60,000 before tax (n = 200). *High-income households are those that make more than $120,000 before tax (n = 320).</p>
+	<p class="data-note">*Survey results are presented using three household income categories: low-income (below $60,000), middle-income ($60,000–$120,000), and high-income (above $120,000). The valid total raw sample size is 24,901, comprising 11,174 respondents with household incomes below $60,000 (44.9%), 7,992 with incomes of $60,000–$120,000 (32.1%), and 5,735 with incomes above $120,000 (23.0%). To ensure that the results are representative of the Canadian population, analyses use weighted sample sizes: 28,527,262 in total, including 10,014,472 respondents with household incomes below $60,000 (35.1%), 11,317,164 with incomes of $60,000–$120,000 (39.7%), and 7,195,626 with incomes above $120,000 (25.2%).</p>
 </div>
 
 <div class="text">
