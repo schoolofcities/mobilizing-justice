@@ -94,7 +94,7 @@
 				bars: [
 					{ label: "Women", value: 26 },
 					{ label: "Men", value: 29 },
-					{ label: "Gender-diverse*", value: 50 }
+					{ label: "Gender-diverse**", value: 50 }
 				]
 			},
 			{
@@ -102,7 +102,7 @@
 				bars: [
 					{ label: "Women", value: 73 },
 					{ label: "Men", value: 72 },
-					{ label: "Gender-diverse*", value: 50 }
+					{ label: "Gender-diverse**", value: 50 }
 				]
 			}
 		]}
@@ -126,7 +126,7 @@
 		stats={[
 			{ stat: 85, color: "var(--brandLightPurple)", label: "Women" },
 			{ stat: 86, color: "var(--mjGreen)",          label: "Men" },
-			{ stat: 67, color: "var(--mjYellow)",         label: "Gender-diverse*" }
+			{ stat: 67, color: "var(--mjYellow)",         label: "Gender-diverse**" }
 		]}
 		backText="
 			<p>
@@ -150,7 +150,7 @@
 				bars: [
 					{ label: "Women", value: 57 },
 					{ label: "Men", value: 64 },
-					{ label: "Gender-diverse*", value: 42 }
+					{ label: "Gender-diverse**", value: 42 }
 				]
 			},
 			{
@@ -158,7 +158,7 @@
 				bars: [
 					{ label: "Women", value: 39 },
 					{ label: "Men", value: 32 },
-					{ label: "Gender-diverse*", value: 52 }
+					{ label: "Gender-diverse**", value: 52 }
 				]
 			}
 		]}

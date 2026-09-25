@@ -30,6 +30,8 @@
 	<h1>Key findings from the Mobilizing Justice National Survey on Transport Poverty</h1>
 </div>
 
+<p class="cite"><span class="cite-label">How to cite this resource:</span> Tiznado-Aitken, I., Nakshi, P., Botescu, A., Forouhar, A., Allen, J. & Farber, S. (2026). Key findings from the Mobilizing Justice National Survey on Transport Poverty. Mobilizing Justice Partnership. Available at: <a href="https://mobilizingjustice.ca/surveyfindings/">https://mobilizingjustice.ca/surveyfindings/</a></p>
+
 <div class="card-grid">
 	{#each nationalSurveyPages as page}
 		{#if page.live}
@@ -54,7 +56,7 @@
 <style>
 	.page-header {
 		max-width: 744px;
-		margin: 60px auto 60px;
+		margin: 80px auto 62px;
 		border-left: 12px solid var(--mjYellow);
 		padding-left: 36px;
 	}
@@ -72,6 +74,26 @@
 		color: var(--mjBlue);
 		margin: 0;
 		padding: 0;
+	}
+
+	.cite {
+		font-family: RobotoRegular, sans-serif;
+		font-size: 15px;
+		line-height: 22px;
+		color: #555555;
+		max-width: 744px;
+		margin: 0 auto 54px;
+		border-left: 12px solid transparent;
+		padding-left: 36px;
+	}
+
+	.cite-label {
+		font-family: RobotoBold, sans-serif;
+	}
+
+	.cite a {
+		color: inherit;
+		overflow-wrap: anywhere;
 	}
 
 	.card-grid {
