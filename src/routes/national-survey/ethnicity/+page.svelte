@@ -49,7 +49,7 @@
 <div class="text">
 
 	<p>
-		Transport poverty can vary by racial and Indigenous identity because access to transportation is shaped by broader patterns of social, economic, and spatial inequalities. In Canada, visible minority and Indigenous populations often experience distinct transportation barriers due to differences in income, housing location, employment opportunities, car access, transit service availability, and experiences of exclusion or discrimination. Examining transport poverty across racial and identity groups therefore helps identify whether transportation systems are meeting the needs of different communities equitably, and whether certain groups face greater barriers to reaching jobs, education, services, and social opportunities.
+		Transport poverty can vary by racial and Indigenous identity* because access to transportation is shaped by broader patterns of social, economic, and spatial inequalities. In Canada, visible minority and Indigenous populations often experience distinct transportation barriers due to differences in income, housing location, employment opportunities, car access, transit service availability, and experiences of exclusion or discrimination. Examining transport poverty across racial and identity groups therefore helps identify whether transportation systems are meeting the needs of different communities equitably, and whether certain groups face greater barriers to reaching jobs, education, services, and social opportunities.
 	</p>
 
 </div>
@@ -132,6 +132,8 @@
 
 </StatCardGrid>
 
-
+<div class="text">
+	<p class="data-note">*Survey results are presented using three ethnicity categories: Indigenous, visible minority, and White. The valid total raw sample size is 26,767, comprising 1,214 Indigenous respondents (4.5%), 5,069 visible minority respondents (18.9%), and 20,484 White respondents (76.5%). To ensure that the results are representative of the Canadian population, analyses use weighted sample sizes: 30,248,462 in total, including 1,353,475 Indigenous respondents (4.5%), 6,457,647 visible minority respondents (21.3%), and 22,437,340 White respondents (74.2%).</p>
+</div>
 
 <PageFooter/>
