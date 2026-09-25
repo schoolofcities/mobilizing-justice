@@ -49,7 +49,7 @@
 <div class="text">
 
 	<p>
-		Transport poverty can also vary by immigration status because transportation needs and constraints may change with settlement stage, employment conditions, social networks, housing location, and familiarity with local transportation systems. Recent immigrants may face distinct barriers as they navigate new job markets, education systems, services, and transit networks, while long-term immigrants may experience transportation challenges differently as their resources, routines, and neighbourhood ties evolve over time. Findings from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>, therefore, can help identify whether transportation systems support equitable access to opportunities across different stages of settlement and integration.
+		Transport poverty can also vary by immigration status* because transportation needs and constraints may change with settlement stage, employment conditions, social networks, housing location, and familiarity with local transportation systems. Recent immigrants may face distinct barriers as they navigate new job markets, education systems, services, and transit networks, while long-term immigrants may experience transportation challenges differently as their resources, routines, and neighbourhood ties evolve over time. Findings from the <a href="https://mobilizingjustice.ca/working-groups/national-survey-of-transport-poverty-and-trse/" target="_blank">Mobilizing Justice National Survey on Transport Poverty</a>, therefore, can help identify whether transportation systems support equitable access to opportunities across different stages of settlement and integration.
 	</p>
 
 </div>
@@ -64,8 +64,8 @@
 		sharedLabel="Reported owning their ideal number of cars (%)"
 		stats={[
 			{ stat: 70, label: "Canadian-born",       color: "var(--mjGreen)" },
-			{ stat: 43, label: "Recent immigrants*",   color: "var(--mjYellow)" },
-			{ stat: 61, label: "Long-term immigrants*", color: "var(--brandLightPurple)" }
+			{ stat: 43, label: "Recent immigrants**",   color: "var(--mjYellow)" },
+			{ stat: 61, label: "Long-term immigrants**", color: "var(--brandLightPurple)" }
 		]}
 		backText="
 			<p>
@@ -83,8 +83,8 @@ Recent immigrants were also more likely to report spending too much on transport
 		sharedLabel="Reported using public transit to work at least once a week (%)"
 		stats={[
 			{ stat: 24, color: "var(--mjGreen)",          label: "Canadian-born" },
-			{ stat: 59, color: "var(--mjYellow)",         label: "Recent immigrants*" },
-			{ stat: 38, color: "var(--brandLightPurple)", label: "Long-term immigrants*" }
+			{ stat: 59, color: "var(--mjYellow)",         label: "Recent immigrants**" },
+			{ stat: 38, color: "var(--brandLightPurple)", label: "Long-term immigrants**" }
 		]}
 		backText="
 			<p>
@@ -101,8 +101,8 @@ Recent immigrants were also more likely to report spending too much on transport
 				label: "Agreed or strongly agreed that they have declined employment opportunities due to their transport situation (%)",
 				bars: [
 					{ label: "Canadian-born",        value: 26 },
-					{ label: "Recent immigrants*",    value: 45 },
-					{ label: "Long-term immigrants*", value: 29 }
+					{ label: "Recent immigrants**",    value: 45 },
+					{ label: "Long-term immigrants**", value: 29 }
 				]
 			}
 		]}
@@ -121,8 +121,8 @@ Recent immigrants were also more likely to report spending too much on transport
 				label: "Agreed or strongly agreed that they feel forced to use transit (%)",
 				bars: [
 					{ label: "Canadian-born",        value: 18 },
-					{ label: "Recent immigrants*",    value: 43 },
-					{ label: "Long-term immigrants*", value: 23 }
+					{ label: "Recent immigrants**",    value: 43 },
+					{ label: "Long-term immigrants**", value: 23 }
 				]
 			}
 		]}
@@ -137,7 +137,8 @@ Recent immigrants were also more likely to report spending too much on transport
 </StatCardGrid>
 
 <div class="text">
-	<p class="data-note">*Recent immigrant refers to a person who landed in Canada during the five years preceding the questionnaire application in 2024. Long-term immigrant refers to an immigrant who landed in Canada more than five years before the questionnaire application in 2024</p>
+	<p class="data-note">*Survey results are presented using three immigration status categories: Canadian-born, long-term immigrant, and recent immigrant. The valid total raw sample size is 27,057, comprising 21,953 Canadian-born respondents (81.1%), 3,747 long-term immigrant respondents (13.9%), and 1,357 recent immigrant respondents (5.0%). To ensure that the results are representative of the Canadian population, analyses use weighted sample sizes: 30,534,779 in total, including 24,520,636 Canadian-born respondents (80.3%), 4,480,082 long-term immigrant respondents (14.7%), and 1,534,061 recent immigrant respondents (5.0%).</p>
+	<p class="data-note">**Recent immigrant refers to a person who landed in Canada during the five years preceding the questionnaire application in 2024. Long-term immigrant refers to an immigrant who landed in Canada more than five years before the questionnaire application in 2024</p>
 </div>
 
 
